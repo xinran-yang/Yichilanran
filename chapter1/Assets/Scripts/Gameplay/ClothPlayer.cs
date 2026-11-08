@@ -21,6 +21,12 @@ namespace YiChiLanRan
         private bool divePressed, diveUsed;
         private SpriteRenderer visual;
         private bool validationInput;
+        public bool ControlsLocked { get; private set; }
+        public void SetControlLock(bool locked)
+        {
+            ControlsLocked=locked; axisInput=0; jumpUntil=-1; divePressed=false;
+            Velocity=Vector2.zero; Diving=false; lastGround=-10;
+        }
 
         private void Awake()
         {
@@ -30,7 +36,7 @@ namespace YiChiLanRan
         private void OnEnable() { visual = GetComponent<SpriteRenderer>(); }
         private void Update()
         {
-            if (validationInput) return;
+            if (validationInput || ControlsLocked) return;
             var k = Keyboard.current;
             if (k == null) return;
             axisInput = ((k.dKey.isPressed || k.rightArrowKey.isPressed) ? 1 : 0)
@@ -55,7 +61,7 @@ namespace YiChiLanRan
         }
         public void Step(float dt)
         {
-            if (!world || !world.Ready) return;
+            if (!world || !world.Ready || ControlsLocked) return;
             Grounded = world.IsGrounded(Foot, Half.x);
             if (Grounded && !Diving) { lastGround = Time.time; diveUsed = false; }
             var v = Velocity;

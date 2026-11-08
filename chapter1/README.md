@@ -1,58 +1,46 @@
-# 《一尺蓝染》· Chapter 1 Unity 工程
+# 《一尺蓝染》· 第一章三关 Demo
 
-独立的 Unity 6000.3.28f1（6.3 LTS）/ Universal 2D / URP / C# 工程，包含第一关与第二关的连续横向地图。
+Unity **6000.3.28f1 / Universal 2D / URP / C#** 独立工程。包含第一关、重制第二关和回纹迷宫第三关，关间自动黑屏过渡。与仓库根目录其他成员的 Unity 工程分开，不要合并 Assets。
 
-本目录是归档工程，与团队仓库根目录已有 Unity 工程并列保存。请单独将 chapter1 添加到 Unity Hub，不要把本目录的 Assets 合并进根工程。
+## 直接试玩（Windows x64）
 
-## 打开项目
+从 [三关试玩版 Release](https://github.com/xinran-yang/Yichilanran/releases/tag/chapter1-demo-20261109-97905b8) 下载 ZIP，完整解压后运行 YiChiLanRan.exe。保留 Data、MonoBleedingEdge、D3D12 和 UnityPlayer.dll 等依赖；不需要 Unity Editor。请阅读包内 README.txt。该包不是 macOS、移动端或网页版。
 
-1. 克隆本团队仓库，并切换到 feature/chapter1-unity-demo 分支；PR 合并后可使用 main。
-2. 在 Unity Hub 中选择 Projects → Add → Add project from disk，选择本 README 所在的 chapter1 文件夹。
-3. 使用 Unity 6000.3.28f1 打开，等待 Unity 根据 Packages 导入依赖；Library 等缓存会在本机重新生成。
-4. 打开 Assets/Scenes/Chapter01.unity，点击 Play，再点击 Game 视图获取键盘焦点。
+## 在 Unity 中打开
 
-## 操作与连续路线
+1. 克隆本仓库，切换到 feature/chapter1-unity-demo（PR合并后可使用main）。
+2. Unity Hub → Add project from disk，选择 **chapter1** 文件夹。
+3. 使用6000.3.28f1，等待依赖导入。
+4. 打开 Assets/Scenes/Chapter01.unity 并 Play。也可分别打开 Chapter01_Level02.unity 或 Chapter01_Level03.unity。
 
-- A / D 或左右方向键：移动。
-- Space：跳跃。
-- S 或向下方向键：空中向下冲跃。
-- R：从第一关起点重新开始。
+## 操作和路线
 
-第一关从蓝态开始，在起点附近莲花标记处跃起后冲跃，切至白态，跨过镜像凹谷和平台到达首段出口。出口后的连接莲花允许主动冲跃回蓝态，然后直接向右进入第二关低地，无加载、选关或重新出生。
+A/D或左右箭头移动；Space跳跃；S/下箭头空中冲跃；R重开当前关；Standalone可用Alt+F4退出。
 
-第二关在低处莲花 A 冲跃变白，跨凹谷并沿小台阶到高处莲花 B，再冲跃回蓝，沿右侧阶梯到区域末端旗标。A/B 只是文档中的称呼，正式画面不显示文字标签。
+第一关在莲花处冲跃换白，越过镜像凹谷到右侧出口。出口0.4秒淡出，全黑载入第二关，再0.4秒淡入，期间锁输入和清速度。
 
-## 已实现
+第二关左下A切白，沿回纹阶梯折返至B切蓝，从上层和右侧通路到出口，再以同一系统进入第三关。
 
-- 同一 Chapter01 场景、同一角色和相机贯穿两关；第二关位于世界 x=18～44.5。
-- 蓝白同色碰撞、固定入口合法冲跃、整张基础几何严格上下镜像。
-- 所有入口共用世界 y=-3.95 轴，角色以脚底中心严格映射，保持正立和左右操作方向。
-- 检查点与相位恢复、首段/第二段进度节点、靛蓝米白布纹和统一莲花 Prefab。
-- 100 PPU；人物显示及碰撞框均为 0.28×0.38 单位；视野 12.8×7.2 单位；基础参数集中于 Assets/Resources/Configuration/GameParameters.json。
-- 正式文字 HUD 默认隐藏；ChapterWorld Inspector 中可手动启用调试覆盖层。
+第三关左下A切白，沿左回纹转折到B切蓝，借蓝面冲跃回弹上中央回纹；下方有可选信封支线。回下通路从高墙下方通过，右下C切白，从右侧阶梯抵达亭子。第三关出口预留后续接口；未制作第四关，不会进入永久黑屏。
 
-## 验证与已知限制
+## 系统与资源
 
-原开发记录表明：2026-11-08 在 Unity 6000.3.28f1 无图形 Play 验证中，同一角色完成两关连续路线，共四次合法穿界；Windows 正式构建成功，0 错误。详情见 [验证记录](docs/LEVEL02_VALIDATION.md)。这些是归档版本的既有结果，不代表本次上传重新执行了 Unity 通关或构建。
+三关共用ClothPlayer、ClothPlayer.prefab、CrossingPoint.prefab、ChapterWorld及LevelTransitionManager；人物0.28×0.38u、100PPU、12.8×7.2u视野和原运动参数保持。地图采用同一蓝形状与白补集，按关卡轴严格映射脚底与地形，角色正立、x不变；美术保持靛蓝/米白布纹。第三关仅按配置增加纵向跟随，仍用相同比例。
 
-本次归档执行文件完整性、复制哈希、meta、依赖与敏感文件检查。尚需人工确认最终图形、键盘手感、入口边缘往返、自然跌落恢复、不同分辨率及低帧率表现，未穷举所有逆向路线。
+Collectible.prefab信封是可选奖励；每轮唯一ID只能收集一次，镜像和普通重生保留，R新一轮恢复。目前没有退出后的永久存档、复杂音效、箱子、尖刺或白脆玩法。正式画面默认不显示文字，调试HUD可在Inspector手动开启。
 
-没有箱子、尖刺、白色脆裂、复杂音效、持久化存档或第三关。检查点只保留本次游玩；R 会重开整段。蓝色弹性起跳与固定冲跃回弹已接入。
+当前数据：Assets/Resources/Configuration/Chapter01.json、Level02.json、Level03.json；共享运动GameParameters.json，过渡LevelFlow.json。
 
-## 配置、生成与协作
+正常试玩无需生成。第三关生成用YiChiLanRan → Build Level03 and Link，不重新生成前两关。旧连续关卡工具和历史说明不适用于当前三关版本。开发前请保存自己的场景工作并保留全部.meta。
 
-- 第一关数据：Assets/Resources/Configuration/Chapter01.json。
-- 第二关扩展：Assets/Resources/Configuration/Chapter01Level02.json。
-- 角色与世界：Assets/Scripts/Gameplay/ClothPlayer.cs、ChapterWorld.cs。
-- 穿界 Prefab：Assets/Prefabs/CrossingPoint.prefab。
-- 当前规则：[CURRENT_GAME_RULES.md](docs/CURRENT_GAME_RULES.md)；第二关详细说明：[LEVEL02_UNITY.md](docs/LEVEL02_UNITY.md)。
+## 验证和限制
 
-已保存正式场景，正常打开不必重新生成。仅需重建时，停止 Play 后先执行 YiChiLanRan → Build Chapter01，再执行 Extend Chapter01 with Level02；生成操作会更新生成资源，请先保存自己的工作。
+原开发记录：前两关输入路线和生产黑屏进入第三关通过；首次第三关实际发现软锁，经局部90×70px连接修正后单独复测第三关通过，包括三次穿界、信封、重生和重开。没有将分段检查冒充最终地图在一次测试中完整跑过三关。三Scene Windows正式构建成功、0错误。
 
-提交并保留所有 .meta；不要提交 Library、Temp、Logs、UserSettings、构建目录或个人 IDE 配置。只打开 chapter1 工程开发其内容，避免影响根工程。根工程的 2.1/2.2 灰盒与本目录的第一/第二关是不同工程，不应混用规则或数据。
+本次归档/打包核对源码与构建快照、完整依赖、ZIP逐文件SHA256，并短暂启动Windows程序验证渲染/程序集/输入初始化；未重新手动通关。图形、手感、不同电脑/分辨率、低帧率和所有逆向操作仍需人工验收，不宣称唯一解。
+
+详细说明：[当前规则](docs/CURRENT_GAME_RULES.md)、[独立关卡](docs/LEVELS_REWORK.md)、[第三关](docs/LEVEL03_UNITY.md)、[第三关验证](docs/LEVEL03_VALIDATION.md)。旧连续方案文档仅作历史记录。
 
 ## 归档来源
 
-源项目分支：feature/chapter01-level02。
-源提交：b9fcd5d846f49308d14c3081285a2695ede4e7b8。
-归档日期：2026-11-09（Asia/Shanghai）。源项目 Git 历史未导入团队仓库，构建产物与临时验证副本未上传。参考数值/SVG中的旧 Demo 说明仅作历史参考，以当前规则和 C# 实现为准。
+游戏代码基于本地提交 **97905b8518097e355952063dd36e274620bf53db**，并包含当前磁盘的docs/level_references目录整理。归档日期2026-11-09。源工程Git历史没有合并入本团队仓库。Unity缓存、IDE个人配置、日志和构建文件不纳入源码；试玩ZIP通过Release提供。

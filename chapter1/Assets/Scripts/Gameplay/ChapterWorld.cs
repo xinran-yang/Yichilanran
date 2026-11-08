@@ -10,17 +10,21 @@ namespace YiChiLanRan
         public Camera gameCamera;
         public TerrainPiece[] terrain;
         public CrossingPoint[] gates;
+        public string levelResource="Configuration/Chapter01";
+        public string nextSceneName;
+        public bool SpawnInitialized { get; private set; }
+        private bool exitConsumed;
         public bool Mirrored { get; private set; }
         public bool Ready { get; private set; }
         public bool Complete { get; private set; }
         public bool Level02Complete { get; private set; }
-        public int CurrentRegion => player.transform.position.x >= Parameters.ToWorld(Data.regions[0].endPx) ? 1 : 0;
+        public int CurrentRegion => Data.levelId=="level03"?2:(Data.levelId=="level02"?1:0);
         [Tooltip("Development overlay only; disabled in the shipped scene")]
         public bool showDebugOverlay;
         public int CrossingCount { get; private set; }
         private ChapterData loadedData;
         private GameParameters loadedParameters;
-        public ChapterData Data => loadedData ?? (loadedData = ChapterData.Load());
+        public ChapterData Data => loadedData ?? (loadedData = ChapterData.LoadResource(levelResource));
         public GameParameters Parameters => loadedParameters ?? (loadedParameters = GameParameters.Load());
         public float Axis => -Parameters.ToWorld(Data.mirrorAxisPx);
         private Vector2 checkpoint;
@@ -31,24 +35,43 @@ namespace YiChiLanRan
         public bool RecoveryWhite => checkpointWhite;
         public int CheckpointIndex => checkpointIndex;
         private GUIStyle titleStyle, hintStyle;
+        private HashSet<string> collected;
+        private Collectible[] collectibleObjects;
+        public Collectible[] Collectibles => collectibleObjects??(collectibleObjects=GetComponentsInChildren<Collectible>());
+        public int CollectedCount => collected==null?0:collected.Count;
+        public bool HasCollected(string id)=>collected!=null && collected.Contains(id);
+        public bool RecordCollection(string id)
+        {
+            if(string.IsNullOrEmpty(id))return false;
+            if(collected==null)collected=new HashSet<string>();
+            return collected.Add(id);
+        }
 
         private void Awake()
         {
-            loadedParameters = GameParameters.Load(); loadedData = ChapterData.Load();
+            loadedParameters = GameParameters.Load(); loadedData = ChapterData.LoadResource(levelResource);
             Time.fixedDeltaTime = Parameters.FixedDeltaTime;
             checkpoint = Parameters.SourcePointToWorld(Data.spawnCenterPx) - Vector2.up * Parameters.PlayerColliderSize.y / 2;
             Ready = true;
             activatedCheckpoints=new bool[Data.checkpoints.Length];
             ApplyGeometry();
         }
-        private void Start() { player.PlaceFoot(checkpoint, false); }
+        private void Start()
+        {
+            player.PlaceFoot(checkpoint,false);
+            player.SetControlLock(LevelTransitionManager.Instance && LevelTransitionManager.Instance.IsTransitioning);
+            SnapCamera(); SpawnInitialized=true;
+        }
         public static Vector2 Reflect(Vector2 p, float axis) => new Vector2(p.x, 2 * axis - p.y);
         private void ApplyGeometry()
         {
             foreach (var piece in terrain) piece.Apply(Mirrored, Axis);
             foreach (var gate in gates) gate.Apply(Mirrored, Axis);
-            ApplyMarker("Checkpoint", Parameters.SourcePointToWorld(Data.checkpointFootPx));
-            ApplyMarker("Exit · continue right", Parameters.SourcePointToWorld(Data.exitFootPx));
+            foreach(var item in Collectibles)item.Apply(Mirrored,Axis,HasCollected(item.persistentId));
+            if(Data.legacyValley)ApplyMarker("Checkpoint", Parameters.SourcePointToWorld(Data.checkpointFootPx));
+            Vector2 baseExit=Parameters.SourcePointToWorld(Data.exitFootPx);
+            if(!Data.exitBlue)baseExit=Reflect(baseExit,Axis);
+            ApplyMarker("Exit · continue right",Mirrored?Reflect(baseExit,Axis):baseExit,true);
             foreach(var marker in GetComponentsInChildren<ProgressMarker>())
             {
                 int index=System.Array.FindIndex(Data.checkpoints,c=>c.id==marker.checkpointId);
@@ -56,11 +79,11 @@ namespace YiChiLanRan
             }
             Physics2D.SyncTransforms();
         }
-        private void ApplyMarker(string name, Vector2 whiteFoot)
+        private void ApplyMarker(string name, Vector2 whiteFoot,bool alreadyMapped=false)
         {
             var marker = transform.Find(name);
             if (!marker) return;
-            Vector2 foot = Mirrored ? whiteFoot : Reflect(whiteFoot, Axis);
+            Vector2 foot = alreadyMapped?whiteFoot:(Mirrored ? whiteFoot : Reflect(whiteFoot, Axis));
             marker.position = foot + Vector2.up * .275f;
             foreach (var sr in marker.GetComponentsInChildren<SpriteRenderer>()) sr.color = ClothArt.Pattern;
         }
@@ -85,7 +108,7 @@ namespace YiChiLanRan
                 if (delta > 0 && center.x + half.x <= r.xMin + 0.00001f) delta = Mathf.Min(delta, r.xMin - center.x - half.x);
                 if (delta < 0 && center.x - half.x >= r.xMax - 0.00001f) delta = Mathf.Max(delta, r.xMax - center.x + half.x);
             }
-            return Mathf.Clamp(center.x + delta, Parameters.ToWorld(Data.segments[0].xPx) + half.x, Parameters.ToWorld(Data.widthPx) - half.x) - center.x;
+            return Mathf.Clamp(center.x + delta, Parameters.ToWorld(Data.leftPx) + half.x, Parameters.ToWorld(Data.widthPx) - half.x) - center.x;
         }
         public float ClampVertical(Vector2 center, Vector2 half, float delta, out bool landed)
         {
@@ -139,9 +162,9 @@ namespace YiChiLanRan
         {
             var foot = actor.Foot;
             float x = foot.x;
-            var wall = Data.segments[2];
+            var wall = Data.legacyValley?Data.segments[2]:null;
             if (foot.y < -Parameters.ToWorld(Data.killBelowPx) ||
-                (Mirrored && x > Parameters.ToWorld(wall.xPx) && x < Parameters.ToWorld(wall.xPx + wall.widthPx) && foot.y < -Parameters.ToWorld(Data.whiteValleyKillPx)))
+                (wall!=null && Mirrored && x > Parameters.ToWorld(wall.xPx) && x < Parameters.ToWorld(wall.xPx + wall.widthPx) && foot.y < -Parameters.ToWorld(Data.whiteValleyKillPx)))
             { Respawn(); return; }
             foreach(var zone in Data.recoveryZones)
             {
@@ -158,8 +181,15 @@ namespace YiChiLanRan
                 checkpoint=Mirrored?Reflect(baseFoot,Axis):baseFoot;
                 ApplyGeometry();
             }
-            if(Mirrored && actor.Grounded && x>=Parameters.ToWorld(Data.regions[0].exitPx)) Complete=true;
-            if(Data.regions.Length>1 && !Mirrored && actor.Grounded && x>=Parameters.ToWorld(Data.regions[1].exitPx)) Level02Complete=true;
+            foreach(var item in Collectibles)item.TryPickup(actor);
+            bool exitHeight=!Data.exitRequiresHeight || Mathf.Abs(foot.y+Parameters.ToWorld(Data.exitFootPx.y))<=Parameters.ToWorld(Data.exitHeightTolerancePx);
+            bool exitWidth=Data.exitWidthPx<=0 || x<=Parameters.ToWorld(Data.exitFootPx.x+Data.exitWidthPx);
+            if(actor.Blue==Data.exitBlue && actor.Grounded && x>=Parameters.ToWorld(Data.exitFootPx.x) && exitHeight && exitWidth)
+            {
+                Complete=true;Level02Complete=Data.levelId=="level02";
+                if(!exitConsumed && LevelTransitionManager.Instance && !string.IsNullOrEmpty(nextSceneName))
+                    exitConsumed=LevelTransitionManager.Instance.Begin(nextSceneName,this);
+            }
         }
         public void Respawn()
         {
@@ -169,10 +199,14 @@ namespace YiChiLanRan
         {
             Complete = false; checkpointReached = false; checkpointWhite = false; CrossingCount = 0;
             Level02Complete=false; checkpointIndex=-1; activatedCheckpoints=new bool[Data.checkpoints.Length];
+            exitConsumed=false;
+            if(collected!=null)collected.Clear();
             checkpoint = Parameters.SourcePointToWorld(Data.spawnCenterPx) - Vector2.up * Parameters.PlayerColliderSize.y / 2;
             Respawn();
         }
         private void LateUpdate()
+        { SnapCamera(); }
+        public void SnapCamera()
         {
             if (!Ready || !gameCamera) return;
             // Letterbox preserves reference viewport on any window, camera never mirrors.
@@ -182,7 +216,13 @@ namespace YiChiLanRan
                 : new Rect(0, (1 - aspect / targetAspect) / 2, 1, aspect / targetAspect);
             float halfWidth = Parameters.ReferenceViewportSize.x / 2;
             float cx = Mathf.Clamp(player.transform.position.x, halfWidth, Parameters.ToWorld(Data.widthPx) - halfWidth);
-            gameCamera.transform.position = new Vector3(cx, -Parameters.ReferenceViewportSize.y / 2, -10);
+            float cy=Data.cameraCenterYPx;
+            if(Data.verticalCameraFollow)
+            {
+                float halfHeight=Parameters.ReferenceResolution.y/2f;
+                cy=Mathf.Clamp(-player.transform.position.y*Parameters.PixelsPerUnit,Data.cameraMinYPx+halfHeight,Data.cameraMaxYPx-halfHeight);
+            }
+            gameCamera.transform.position = new Vector3(cx, -Parameters.ToWorld(cy), -10);
         }
         private void OnGUI()
         {

@@ -9,6 +9,8 @@ namespace YiChiLanRan
     [Serializable] public sealed class CheckpointDefinition { public string id; public float xPx, surfacePx; public bool blue; }
     [Serializable] public sealed class RegionDefinition { public string id; public float startPx, endPx, exitPx; public bool exitBlue; }
     [Serializable] public sealed class RecoveryZone { public float leftPx, rightPx, belowPx; public bool blue; }
+    [Serializable] public sealed class BlueRectangle { public float xPx,yPx,widthPx,heightPx; }
+    [Serializable] public sealed class CollectibleDefinition { public string id; public Vector2 centerPx; }
     [Serializable] public sealed class ChapterExtension
     {
         public float widthPx;
@@ -21,6 +23,13 @@ namespace YiChiLanRan
     [Serializable] public sealed class ChapterData
     {
         public string chapterTitle, regionTitle;
+        public string levelId;
+        public float leftPx,cameraCenterYPx;
+        public bool exitBlue,legacyValley;
+        public BlueRectangle[] blueRectangles;
+        public bool verticalCameraFollow,exitRequiresHeight;
+        public float cameraMinYPx,cameraMaxYPx,exitHeightTolerancePx,exitWidthPx;
+        public CollectibleDefinition[] collectibles;
         public float widthPx, topPx, bottomPx, mirrorAxisPx, killBelowPx, whiteValleyKillPx, groundTolerancePx;
         public Vector2 spawnCenterPx, checkpointFootPx, exitFootPx;
         public ContourSegment[] segments;
@@ -33,6 +42,7 @@ namespace YiChiLanRan
             var asset = Resources.Load<TextAsset>("Configuration/Chapter01");
             if (!asset) throw new InvalidOperationException("Missing Chapter01 data");
             var data = JsonUtility.FromJson<ChapterData>(asset.text);
+            data.levelId="level01"; data.leftPx=40; data.cameraCenterYPx=360; data.legacyValley=true;
             if (data.segments == null || data.gates == null || data.widthPx <= 0)
                 throw new InvalidOperationException("Invalid Chapter01 geometry");
             data.checkpoints = new[] { new CheckpointDefinition { id="level01-checkpoint", xPx=data.checkpointFootPx.x,
@@ -53,6 +63,19 @@ namespace YiChiLanRan
             for(int i=1;i<data.segments.Length;i++)
                 if(Mathf.Abs(data.segments[i-1].xPx+data.segments[i-1].widthPx-data.segments[i].xPx)>.001f)
                     throw new InvalidOperationException("Contour seam gap or overlap at " + data.segments[i].xPx);
+            return data;
+        }
+        public static ChapterData LoadResource(string resource)
+        {
+            if(resource=="Configuration/Chapter01") return Load(false);
+            var asset=Resources.Load<TextAsset>(resource);
+            if(!asset) throw new InvalidOperationException("Missing level data: "+resource);
+            var data=JsonUtility.FromJson<ChapterData>(asset.text);
+            if(data.blueRectangles==null || data.gates==null || data.widthPx<=data.leftPx)
+                throw new InvalidOperationException("Invalid level data: "+resource);
+            data.checkpoints=data.checkpoints??Array.Empty<CheckpointDefinition>();
+            data.recoveryZones=data.recoveryZones??Array.Empty<RecoveryZone>();
+            data.regions=new[]{new RegionDefinition{id=data.levelId,startPx=data.leftPx,endPx=data.widthPx,exitPx=data.exitFootPx.x,exitBlue=data.exitBlue}};
             return data;
         }
     }

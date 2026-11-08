@@ -1,0 +1,61 @@
+{
+  "levelId":"level03",
+  "chapterTitle":"留白",
+  "regionTitle":"回纹",
+  "leftPx":40,"widthPx":3000,"topPx":-80,"bottomPx":960,
+  "mirrorAxisPx":300,"cameraCenterYPx":680,
+  "verticalCameraFollow":true,"cameraMinYPx":-400,"cameraMaxYPx":1040,
+  "spawnCenterPx":{"x":100,"y":741},
+  "exitFootPx":{"x":2740,"y":300},"exitBlue":false,
+  "exitRequiresHeight":true,"exitHeightTolerancePx":8,"exitWidthPx":40,
+  "killBelowPx":1100,"groundTolerancePx":0.15,
+  "blueRectangles":[
+    {"xPx":40,"yPx":760,"widthPx":960,"heightPx":200},
+    {"xPx":1000,"yPx":900,"widthPx":1320,"heightPx":60},
+    {"xPx":2320,"yPx":840,"widthPx":120,"heightPx":120},
+    {"xPx":2440,"yPx":800,"widthPx":120,"heightPx":160},
+    {"xPx":2560,"yPx":760,"widthPx":440,"heightPx":200},
+
+    {"xPx":40,"yPx":190,"widthPx":960,"heightPx":90},
+    {"xPx":40,"yPx":190,"widthPx":140,"heightPx":460},
+    {"xPx":40,"yPx":600,"widthPx":260,"heightPx":50},
+    {"xPx":300,"yPx":600,"widthPx":90,"heightPx":360},
+    {"xPx":300,"yPx":600,"widthPx":200,"heightPx":90},
+    {"xPx":560,"yPx":600,"widthPx":440,"heightPx":90},
+    {"xPx":910,"yPx":190,"widthPx":90,"heightPx":500},
+    {"xPx":300,"yPx":350,"widthPx":90,"heightPx":340},
+    {"xPx":300,"yPx":280,"widthPx":90,"heightPx":70},
+    {"xPx":300,"yPx":350,"widthPx":460,"heightPx":90},
+    {"xPx":670,"yPx":350,"widthPx":90,"heightPx":190},
+    {"xPx":560,"yPx":450,"widthPx":200,"heightPx":90},
+
+    {"xPx":1000,"yPx":350,"widthPx":280,"heightPx":90},
+    {"xPx":1280,"yPx":190,"widthPx":560,"heightPx":90},
+    {"xPx":1750,"yPx":190,"widthPx":90,"heightPx":430},
+    {"xPx":1280,"yPx":530,"widthPx":560,"heightPx":90},
+    {"xPx":1280,"yPx":330,"widthPx":90,"heightPx":290},
+    {"xPx":1280,"yPx":330,"widthPx":300,"heightPx":90},
+    {"xPx":1490,"yPx":330,"widthPx":90,"heightPx":130},
+
+    {"xPx":2000,"yPx":-80,"widthPx":200,"heightPx":840},
+
+    {"xPx":2320,"yPx":400,"widthPx":120,"heightPx":90},
+    {"xPx":2440,"yPx":360,"widthPx":120,"heightPx":130},
+    {"xPx":2560,"yPx":330,"widthPx":140,"heightPx":160},
+    {"xPx":2700,"yPx":300,"widthPx":120,"heightPx":190},
+    {"xPx":2820,"yPx":280,"widthPx":60,"heightPx":680},
+    {"xPx":2880,"yPx":220,"widthPx":60,"heightPx":740},
+    {"xPx":2940,"yPx":160,"widthPx":60,"heightPx":800},
+    {"xPx":2320,"yPx":400,"widthPx":100,"heightPx":250},
+    {"xPx":2320,"yPx":560,"widthPx":380,"heightPx":90},
+    {"xPx":2600,"yPx":500,"widthPx":100,"heightPx":150},
+    {"xPx":2500,"yPx":500,"widthPx":200,"heightPx":60}
+  ],
+  "gates":[
+    {"leftPx":160,"rightPx":280,"surfacePx":760},
+    {"leftPx":180,"rightPx":300,"surfacePx":190},
+    {"leftPx":2660,"rightPx":2780,"surfacePx":760}
+  ],
+  "collectibles":[{"id":"chapter01-letter","centerPx":{"x":700,"y":740}}],
+  "checkpoints":[],"recoveryZones":[]
+}
