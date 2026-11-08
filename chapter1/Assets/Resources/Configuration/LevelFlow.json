@@ -1,0 +1,5 @@
+{
+  "fadeOutSeconds":0.4,
+  "fadeInSeconds":0.4,
+  "spawnReadyTimeoutSeconds":15
+}

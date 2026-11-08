@@ -1,0 +1,36 @@
+{
+  "levelId":"level02",
+  "chapterTitle":"留白",
+  "regionTitle":"层染",
+  "leftPx":40,
+  "widthPx":1800,
+  "topPx":0,
+  "bottomPx":640,
+  "mirrorAxisPx":320,
+  "cameraCenterYPx":300,
+  "spawnCenterPx":{"x":100,"y":531},
+  "exitFootPx":{"x":1740,"y":620},
+  "exitBlue":true,
+  "killBelowPx":700,
+  "groundTolerancePx":0.15,
+  "blueRectangles":[
+    {"xPx":40,"yPx":550,"widthPx":660,"heightPx":90},
+    {"xPx":40,"yPx":280,"widthPx":320,"heightPx":160},
+    {"xPx":360,"yPx":260,"widthPx":120,"heightPx":180},
+    {"xPx":480,"yPx":240,"widthPx":120,"heightPx":200},
+    {"xPx":600,"yPx":220,"widthPx":100,"heightPx":220},
+    {"xPx":700,"yPx":300,"widthPx":420,"heightPx":340},
+    {"xPx":1120,"yPx":420,"widthPx":120,"heightPx":220},
+    {"xPx":1240,"yPx":460,"widthPx":120,"heightPx":180},
+    {"xPx":1360,"yPx":500,"widthPx":120,"heightPx":140},
+    {"xPx":1480,"yPx":540,"widthPx":120,"heightPx":100},
+    {"xPx":1600,"yPx":580,"widthPx":100,"heightPx":60},
+    {"xPx":1700,"yPx":620,"widthPx":100,"heightPx":20}
+  ],
+  "gates":[
+    {"leftPx":220,"rightPx":340,"surfacePx":550},
+    {"leftPx":140,"rightPx":260,"surfacePx":280}
+  ],
+  "checkpoints":[],
+  "recoveryZones":[]
+}
