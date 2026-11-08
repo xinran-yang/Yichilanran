@@ -1,0 +1,23 @@
+{
+  "chapterTitle": "第一章 · 留白",
+  "regionTitle": "一 · 初染",
+  "widthPx": 1800,
+  "topPx": 150,
+  "bottomPx": 640,
+  "mirrorAxisPx": 395,
+  "spawnCenterPx": { "x": 140, "y": 431 },
+  "checkpointFootPx": { "x": 760, "y": 365 },
+  "exitFootPx": { "x": 1620, "y": 365 },
+  "killBelowPx": 700,
+  "whiteValleyKillPx": 520,
+  "groundTolerancePx": 0.15,
+  "segments": [
+    { "xPx": 40, "widthPx": 290, "surfacePx": 450 },
+    { "xPx": 330, "widthPx": 240, "surfacePx": 500 },
+    { "xPx": 570, "widthPx": 110, "surfacePx": 200 },
+    { "xPx": 680, "widthPx": 270, "surfacePx": 425 },
+    { "xPx": 950, "widthPx": 110, "surfacePx": 365 },
+    { "xPx": 1060, "widthPx": 740, "surfacePx": 425 }
+  ],
+  "gates": [ { "leftPx": 180, "rightPx": 300, "surfacePx": 450 } ]
+}

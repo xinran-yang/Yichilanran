@@ -1,0 +1,30 @@
+{
+  "widthPx": 4450,
+  "segments": [
+    {"xPx":1800,"widthPx":440,"surfacePx":600},
+    {"xPx":2240,"widthPx":110,"surfacePx":230},
+    {"xPx":2350,"widthPx":170,"surfacePx":560},
+    {"xPx":2520,"widthPx":130,"surfacePx":580},
+    {"xPx":2650,"widthPx":130,"surfacePx":600},
+    {"xPx":2780,"widthPx":260,"surfacePx":620},
+    {"xPx":3040,"widthPx":130,"surfacePx":560},
+    {"xPx":3170,"widthPx":130,"surfacePx":500},
+    {"xPx":3300,"widthPx":130,"surfacePx":440},
+    {"xPx":3430,"widthPx":130,"surfacePx":380},
+    {"xPx":3560,"widthPx":130,"surfacePx":320},
+    {"xPx":3690,"widthPx":130,"surfacePx":260},
+    {"xPx":3820,"widthPx":130,"surfacePx":200},
+    {"xPx":3950,"widthPx":500,"surfacePx":620}
+  ],
+  "gates": [
+    {"leftPx":1680,"rightPx":1780,"surfacePx":425},
+    {"leftPx":1980,"rightPx":2100,"surfacePx":600},
+    {"leftPx":2820,"rightPx":2940,"surfacePx":620}
+  ],
+  "checkpoints": [
+    {"id":"connection","xPx":1860,"surfacePx":600,"blue":true},
+    {"id":"level02-upper","xPx":2990,"surfacePx":620,"blue":true}
+  ],
+  "regions": [{"id":"level02","startPx":1800,"endPx":4450,"exitPx":4320,"exitBlue":true}],
+  "recoveryZones": [{"leftPx":2240,"rightPx":2350,"belowPx":480,"blue":false}]
+}
