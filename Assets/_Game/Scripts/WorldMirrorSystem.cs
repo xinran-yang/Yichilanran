@@ -25,6 +25,7 @@ namespace YiChiLanRan
         {
             internal readonly Dictionary<PhaseObject,Pose> poses=new Dictionary<PhaseObject,Pose>();
             internal readonly Dictionary<TransferZone2D,Vector2> zones=new Dictionary<TransferZone2D,Vector2>();
+            internal readonly Dictionary<TransferZone2D,Vector2> zoneTargets=new Dictionary<TransferZone2D,Vector2>();
             internal readonly List<BodyState> bodies=new List<BodyState>();
             internal string id=Guid.NewGuid().ToString("N").Substring(0,8);
             internal TransferZone2D zone;
@@ -69,14 +70,14 @@ namespace YiChiLanRan
                 result.poses[o]=new Pose { source=o.Position,target=Rules.Mirror(o.Position,result.axis),phase=o.phase,
                     sourceOffset=o.Shape.offset,targetOffset=new Vector2(o.Shape.offset.x,-o.Shape.offset.y),size=o.WorldSize,sourceCenter=o.Bounds.center,supportId=transferBox ? transferBox.referenceSupportId : "",supportSide=transferBox ? transferBox.referenceSupportSide : 1 };
             }
-            foreach(var z in world.Zones) result.zones[z]=z.transform.position;
+            foreach(var z in world.Zones) { result.zones[z]=z.transform.position; result.zoneTargets[z]=z.PositionFor(!world.Mirrored); }
             if(world.Goal) { result.goal=world.Goal.position; result.goalScale=world.Goal.localScale; }
             foreach(var o in world.Objects) if(o.kind==ObjectKind.Terrain || o.kind==ObjectKind.BoxBarrier) foreach(Transform child in o.transform)
             { result.visualPositions[child]=child.localPosition; result.visualRotations[child]=child.localRotation; }
             // Player alone uses the confirmed safe-landing policy. No box target is ever overwritten by a floor search or pad snap.
             var pp=result.poses[player];
             Rect boxTarget=box!=null ? TargetBounds(box,result.poses[box]) : default;
-            float bottom=box!=null ? boxTarget.yMax+Rules.Skin : 2*result.axis-zone.Floor+Rules.Skin;
+            float bottom=box!=null ? boxTarget.yMax+Rules.Skin : result.zoneTargets[zone].y+Rules.Skin;
             float centerX=box!=null ? boxTarget.center.x : player.Bounds.center.x;
             pp.target=new Vector2(centerX,bottom+pp.size.y/2)-player.WorldOffset(pp.targetOffset);
             if(!TargetsSafe(result,out string reason)) { Audit(result,"REJECTED",false,reason); return Reject(reason); }
@@ -109,6 +110,7 @@ namespace YiChiLanRan
             foreach(var pair in plan.poses)
                 if(Vector2.Distance(pair.Key.Position,pair.Value.source)>Epsilon || pair.Key.phase!=pair.Value.phase || pair.Key.Shape.offset!=pair.Value.sourceOffset || Vector2.Distance(pair.Key.WorldSize,pair.Value.size)>Epsilon) return false;
             foreach(var z in plan.zones) if(Vector2.Distance(z.Key.transform.position,z.Value)>Epsilon) return false;
+            foreach(var z in plan.zoneTargets) if(Vector2.Distance(z.Key.PositionFor(!plan.oldMirrored),z.Value)>Epsilon) return false;
             return !world.Goal || (Vector2.Distance(world.Goal.position,plan.goal)<=Epsilon && world.Goal.localScale==plan.goalScale);
         }
         bool Reject(string reason) { world.Failure=reason; return false; }
@@ -150,7 +152,7 @@ namespace YiChiLanRan
             }
             world.Player.Entity.SetPhase(plan.target);
             if(plan.box!=null) plan.box.SetPhase(plan.target);
-            foreach(var z in plan.zones) z.Key.transform.position=Rules.Mirror(z.Value,plan.axis);
+            foreach(var z in plan.zoneTargets) z.Key.transform.position=z.Value;
             if(world.Goal) { world.Goal.position=Rules.Mirror(plan.goal,plan.axis); world.Goal.localScale=new Vector3(plan.goalScale.x,-plan.goalScale.y,plan.goalScale.z); }
             foreach(var pair in plan.visualPositions)
             {

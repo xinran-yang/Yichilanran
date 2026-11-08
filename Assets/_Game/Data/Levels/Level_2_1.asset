@@ -307,6 +307,8 @@ MonoBehaviour:
     green: 0
     allowSolo: 1
     allowBox: 0
+    hasMirroredFloor: 1
+    mirroredFloor: 8.96
   - id: Green
     x: 20.3
     width: 3.2
@@ -314,6 +316,8 @@ MonoBehaviour:
     green: 1
     allowSolo: 1
     allowBox: 1
+    hasMirroredFloor: 1
+    mirroredFloor: 7.26
   routeNotes: No extra white relay. Lower yellow-side blue plateau to 2.0; white
     floor follows the same source dimensions. Pit width 4.6 and right green rise
     2.75 prevent direct ordinary/bounce exit and main-to-green shortcuts. Raise existing

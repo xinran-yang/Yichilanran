@@ -390,7 +390,9 @@
             "floor": 2.0,
             "green": false,
             "allowSolo": true,
-            "allowBox": false
+            "allowBox": false,
+            "hasMirroredFloor": true,
+            "mirroredFloor": 8.960000038146973
         },
         {
             "id": "Green",
@@ -399,7 +401,9 @@
             "floor": 3.700000047683716,
             "green": true,
             "allowSolo": true,
-            "allowBox": true
+            "allowBox": true,
+            "hasMirroredFloor": true,
+            "mirroredFloor": 7.260000228881836
         }
     ],
     "routeNotes": "No extra white relay. Lower yellow-side blue plateau to 2.0; white floor follows the same source dimensions. Pit width 4.6 and right green rise 2.75 prevent direct ordinary/bounce exit and main-to-green shortcuts. Raise existing right-hand climbing ledges together by 0.7 to retain the blue-box-3 ascent. Start floor thickened one box-height. White terrain fill, collision and ink boundary are one geometry; flag reflects complete visual hierarchy."

@@ -1,0 +1,10 @@
+All yellow/green pad widths must lie on the active terrain boundary.
+PASS Blue Yellow y=1.05 full width=2.3 on actual terrain top
+PASS Blue Green 1 y=6.1 full width=3.1 on actual terrain top
+PASS Blue Green 2 y=4.1 full width=3.1 on actual terrain top
+PASS White Yellow y=10.95 full width=2.3 on actual terrain top
+PASS White Green 1 y=4.86 full width=3.1 on actual terrain top
+PASS White Green 2 y=6.86 full width=3.1 on actual terrain top
+PASS Blue Yellow y=1.05 full width=2.3 on actual terrain top
+PASS Blue Green 1 y=6.1 full width=3.1 on actual terrain top
+PASS Blue Green 2 y=4.1 full width=3.1 on actual terrain top

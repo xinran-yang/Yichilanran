@@ -26,19 +26,7 @@ namespace YiChiLanRan.Editor
             b.Walk(22.6f); b.Wait(.5f); b.Walk(19.98f); // Move to the right side, push the blue box LEFT toward the independent ledge.
             b.Jump(19.2f); b.Jump(17.8f); b.Walk(15.1f); b.Jump(16.7f); b.Walk(22.1f);
         }
-        static void Route22(RouteDriver b)
-        {
-            b.Wait(.4f); b.Jump(3.9f); b.Walk(8.5f); b.Wait(.3f); b.Walk(11.4f); Dive(b,11.4f);
-            Dive(b,6.5f,.25f);
-            b.Jump(4.8f); b.Jump(2.7f); b.Walk(5.6f); b.Wait(.7f);
-            float x=b.world.Objects.Find(o=>o.objectId=="Box 1").Position.x;
-            b.Jump(x); Dive(b,x);
-            b.Walk(x-.9f); b.Wait(.4f); b.Walk(14.02f,10); b.Jump(14.8f); b.Jump(16.2f);
-            b.Walk(20.45f); b.Jump(21.3f); b.Jump(22.3f); b.Wait(.3f); b.Walk(19.78f); // push box 3 left into Green 2
-            x=b.world.Objects.Find(o=>o.objectId=="Box 3").Position.x;
-            b.Jump(x); Dive(b,x);
-            b.Jump(20.6f); b.Walk(22.1f);
-        }
+        static void Route22(RouteDriver b) { Level22RevisionChecks.FollowRoute(b); }
         static void Run(string id,Action<RouteDriver> actions)
         {
             if(!Application.isBatchMode) throw new Exception("Use isolated batch project");

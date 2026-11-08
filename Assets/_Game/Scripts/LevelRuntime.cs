@@ -160,7 +160,14 @@ namespace YiChiLanRan
             }
             if(solo!=null) { Mirror.TryTransfer(solo,null); return; }
             if(hit==null) return;
-            if(hit.elastic) { if(nearest<=.025f) Player.Bounce(Clock); }
+            if(hit.elastic)
+            {
+                if(nearest<=.025f)
+                {
+                    if(Rules.EnableDiveBounce) Player.Bounce(Clock);
+                    else Player.EndDive();
+                }
+            }
             else if(hit.breakable && hit.kind==ObjectKind.Terrain)
             { hit.gameObject.SetActive(false); Player.EndDive(); LastEvent="Brittle crust broken"; }
             else Player.EndDive();

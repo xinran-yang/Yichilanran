@@ -4,6 +4,10 @@ Unity 6000.3.28f1（6.3 LTS），Universal 2D，C# / Rigidbody2D。
 
 当前是保存开发进度的版本，仍有待用户验收、后续修正的问题，不代表最终发布版。
 
+`develop` 保存后续可玩性 Demo 进度；`main` 保留首次上传版本。最新修正包括 2.2 地图与防绕行地形、两态传送点贴合道路边界、所有箱子的绿色带箱换色，以及暂时关闭 S 下冲自动高回弹。Space 跳跃保持现有参数。
+
+当前说明见 [2.2 地图修正](Docs/Level22_Revision.md)、[传送点与换色修复](Docs/PortalBoundary_Fix.md)、[Demo 下冲模式](Docs/DemoDive_Mode.md)。
+
 ## 运行
 
 用对应 Unity 版本打开项目，等待导入完成，打开 `Assets/_Game/Scenes/Level_2_1.unity` 并 Play。

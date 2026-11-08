@@ -1,0 +1,5 @@
+Unity PhysicsScene2D continuous input route; no mid-route placement.
+Box 2 pushed into pit: (9.8000, 5.3800) -> (12.7900, 4.3750)
+PASS parked box 1 after final BLUE mirror: (x:15.39, y:6.13, width:1.00, height:1.00); pillar=(x:16.40, y:6.10, width:2.30, height:5.80); no penetration beyond 0.025 contact tolerance.
+PASS yellow -> push box 2 -> green 1 solo -> bring box 1 -> push box 1 across box 2 -> green 2 with box 3 -> flag.
+player=(x:21.29, y:6.86, width:0.56, height:0.76) grounded=True phase=Blue transfers=4 event=Level complete rejection=

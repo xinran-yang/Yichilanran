@@ -27,7 +27,7 @@ foreach($id in @('2.1','2.2')){
         $txt=[Drawing.SolidBrush]::new($(if($b.phase -eq 0){$paper}else{$ink})); $g.DrawString(($b.id -replace 'Box ',''),$font,$txt,($r.X+12),($r.Y+9));$txt.Dispose()
     }
     foreach($z in $d.zones){
-        $y=if($mirrored){2*$d.mirrorAxis-$z.floor}else{$z.floor}
+        $y=if($mirrored){if($z.hasMirroredFloor){$z.mirroredFloor}else{2*$d.mirrorAxis-$z.floor}}else{$z.floor}
         $r=RectPx $z.x ($y-.035) $z.width .10; $brush=[Drawing.SolidBrush]::new($(if($z.green){[Drawing.Color]::LimeGreen}else{[Drawing.Color]::Gold})); $g.FillRectangle($brush,$r);$brush.Dispose()
     }
     $blue=[Drawing.SolidBrush]::new($ink)
@@ -42,3 +42,4 @@ foreach($id in @('2.1','2.2')){
     $g.Dispose();$bmp.Dispose();$blue.Dispose();$pen.Dispose();$font.Dispose();$title.Dispose();$grid.Dispose()
     }
 }
+

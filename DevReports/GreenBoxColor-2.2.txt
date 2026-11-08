@@ -1,0 +1,5 @@
+Real box-2 Green-1 regression, continuous input; no mid-route placement.
+Before dive: box=(x:6.01, y:4.88, width:1.00, height:1.00) support=White approach region 0 side=1 pad=4.86 bottomGap=0.01999998 topGap=1.02 accepted=True
+PASS actual Green 1 + Box 2: WHITE -> BLUE; event=Green 1 + Box 2
+PASS same box/pad returns BLUE -> WHITE; unrelated boxes keep colors, exact mirror audit passes both times.
+PASS reset restores original colors and transfer count.

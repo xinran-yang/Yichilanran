@@ -192,9 +192,9 @@
             "rect": {
                 "serializedVersion": "2",
                 "x": 5.099999904632568,
-                "y": 4.900000095367432,
+                "y": 4.300000190734863,
                 "width": 1.100000023841858,
-                "height": 1.2000000476837159
+                "height": 1.799999713897705
             },
             "phase": 0,
             "elastic": true,
@@ -206,9 +206,9 @@
             "rect": {
                 "serializedVersion": "2",
                 "x": 6.199999809265137,
-                "y": 5.449999809265137,
+                "y": 4.699999809265137,
                 "width": 1.2000000476837159,
-                "height": 0.6499999761581421
+                "height": 1.4000000953674317
             },
             "phase": 0,
             "elastic": true,
@@ -220,9 +220,9 @@
             "rect": {
                 "serializedVersion": "2",
                 "x": 7.400000095367432,
-                "y": 5.150000095367432,
+                "y": 4.400000095367432,
                 "width": 1.899999976158142,
-                "height": 0.949999988079071
+                "height": 1.6999998092651368
             },
             "phase": 0,
             "elastic": true,
@@ -235,8 +235,8 @@
                 "serializedVersion": "2",
                 "x": 9.300000190734864,
                 "y": 4.900000095367432,
-                "width": 1.0,
-                "height": 2.200000047683716
+                "width": 2.799999952316284,
+                "height": 1.2000000476837159
             },
             "phase": 0,
             "elastic": true,
@@ -248,9 +248,23 @@
             "rect": {
                 "serializedVersion": "2",
                 "x": 10.300000190734864,
-                "y": 4.0,
-                "width": 5.0,
-                "height": 2.0999999046325685
+                "y": 2.700000047683716,
+                "width": 6.09999942779541,
+                "height": 3.3999998569488527
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Box 2 pit counterpart crown",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 12.199999809265137,
+                "y": 6.099999904632568,
+                "width": 1.159999966621399,
+                "height": 1.0
             },
             "phase": 0,
             "elastic": true,
@@ -275,9 +289,9 @@
             "id": "Right lower arm",
             "rect": {
                 "serializedVersion": "2",
-                "x": 15.199999809265137,
+                "x": 16.0,
                 "y": 2.0999999046325685,
-                "width": 8.699999809265137,
+                "width": 7.899999618530273,
                 "height": 2.0
             },
             "phase": 0,
@@ -290,9 +304,9 @@
             "rect": {
                 "serializedVersion": "2",
                 "x": 20.0,
-                "y": 6.050000190734863,
+                "y": 5.650000095367432,
                 "width": 3.9000000953674318,
-                "height": 0.800000011920929
+                "height": 1.1999998092651368
             },
             "phase": 0,
             "elastic": true,
@@ -328,6 +342,20 @@
             "kind": 3
         },
         {
+            "id": "Blue hanging pillar shell",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 16.399999618530275,
+                "y": 6.099999904632568,
+                "width": 2.3000011444091799,
+                "height": 5.799999713897705
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
             "id": "White left region 0",
             "rect": {
                 "serializedVersion": "2",
@@ -347,7 +375,7 @@
                 "serializedVersion": "2",
                 "x": 4.699999809265137,
                 "y": 7.139999866485596,
-                "width": 4.559999942779541,
+                "width": 7.5,
                 "height": 4.760000228881836
             },
             "phase": 1,
@@ -356,13 +384,13 @@
             "kind": 0
         },
         {
-            "id": "White pit region 0",
+            "id": "White box 2 pit 0",
             "rect": {
                 "serializedVersion": "2",
-                "x": 9.260000228881836,
-                "y": 8.140000343322754,
-                "width": 1.0800000429153443,
-                "height": 3.759999990463257
+                "x": 12.199999809265137,
+                "y": 8.139999389648438,
+                "width": 1.159999966621399,
+                "height": 3.760000228881836
             },
             "phase": 1,
             "elastic": false,
@@ -373,9 +401,9 @@
             "id": "White middle region 0",
             "rect": {
                 "serializedVersion": "2",
-                "x": 10.34000015258789,
+                "x": 13.359999656677246,
                 "y": 7.139999866485596,
-                "width": 4.960000038146973,
+                "width": 3.0399999618530275,
                 "height": 4.760000228881836
             },
             "phase": 1,
@@ -387,9 +415,9 @@
             "id": "White right region 0",
             "rect": {
                 "serializedVersion": "2",
-                "x": 15.300000190734864,
+                "x": 16.399999618530275,
                 "y": 5.139999866485596,
-                "width": 4.699999809265137,
+                "width": 3.6000003814697267,
                 "height": 6.760000228881836
             },
             "phase": 1,
@@ -402,9 +430,9 @@
             "rect": {
                 "serializedVersion": "2",
                 "x": 20.0,
-                "y": 6.850000381469727,
+                "y": 6.849999904632568,
                 "width": 3.8999996185302736,
-                "height": 5.049999713897705
+                "height": 5.050000190734863
             },
             "phase": 1,
             "elastic": false,
@@ -418,7 +446,133 @@
                 "x": 20.0,
                 "y": 5.139999866485596,
                 "width": 3.8999996185302736,
-                "height": 0.9100003242492676
+                "height": 0.5100002288818359
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White upper left pillar",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.699999988079071,
+                "y": 1.0500001907348633,
+                "width": 2.5999999046325685,
+                "height": 6.349999904632568
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White upper left shoulder",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 3.299999952316284,
+                "y": 2.5500001907348635,
+                "width": 1.399999976158142,
+                "height": 4.849999904632568
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White upper starter step",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 4.699999809265137,
+                "y": 2.5500001907348635,
+                "width": 0.30000001192092898,
+                "height": 2.25
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White upper starter notch",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 5.0,
+                "y": 2.1499996185302736,
+                "width": 0.6000000238418579,
+                "height": 2.65000057220459
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White upper second step",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 5.599999904632568,
+                "y": 2.5500001907348635,
+                "width": 2.5,
+                "height": 2.25
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White upper yellow approach",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 8.100000381469727,
+                "y": 1.5,
+                "width": 2.200000047683716,
+                "height": 3.3000001907348635
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White upper yellow shelf",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 10.300000190734864,
+                "y": 1.0500001907348633,
+                "width": 2.5,
+                "height": 3.75
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White right top region",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 14.100000381469727,
+                "y": 0.10000038146972656,
+                "width": 9.800000190734864,
+                "height": 2.0
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White right hanging wall",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 14.100000381469727,
+                "y": 2.1000003814697267,
+                "width": 1.2000000476837159,
+                "height": 1.9999995231628419
             },
             "phase": 1,
             "elastic": false,
@@ -439,7 +593,7 @@
             "id": "Box 2",
             "center": {
                 "x": 9.800000190734864,
-                "y": 7.619999885559082
+                "y": 6.619999885559082
             },
             "phase": 1
         },
@@ -460,7 +614,9 @@
             "floor": 1.0499999523162842,
             "green": false,
             "allowSolo": true,
-            "allowBox": false
+            "allowBox": false,
+            "hasMirroredFloor": true,
+            "mirroredFloor": 10.949999809265137
         },
         {
             "id": "Green 1",
@@ -469,7 +625,9 @@
             "floor": 6.099999904632568,
             "green": true,
             "allowSolo": true,
-            "allowBox": true
+            "allowBox": true,
+            "hasMirroredFloor": true,
+            "mirroredFloor": 4.860000133514404
         },
         {
             "id": "Green 2",
@@ -478,8 +636,10 @@
             "floor": 4.099999904632568,
             "green": true,
             "allowSolo": true,
-            "allowBox": true
+            "allowBox": true,
+            "hasMirroredFloor": true,
+            "mirroredFloor": 6.860000133514404
         }
     ],
-    "routeNotes": "Reference 2.2.1map.png / 2.2.2map.jpg + oral route. Yellow -> green 1 solo -> push blue 1 off upper shelf -> green 1 carry -> white 1 across white 2's filled gap -> white right ledge -> move white 3 out from below flag to green 2 -> blue 3 -> flag. Crown height calibrated so box 2 top fills the 1.08-wide white-road gap after strict mirror. Upper barrier is box-only. Flag lower face leaves 0.17 above a standing player on initial box 3; move box out before final jump."
+    "routeNotes": "Corrected white upper silhouette and blue corridor from 2026-11-09 drawing. Box 2 starts on an extended 2.8-wide crown, lowered by 1.0 for a strict mirrored position on the white road; push it RIGHT into the new 1.16-wide pit at x=12.2..13.36 after yellow. Box 2 no longer starts as an automatic filler. Green 1 white corridor clearance 2.34. Extend white box-2 road from x=15.3 to x=16.4, exactly adjoining Green 2's right platform; move box 1 farther right and use it to climb the unchanged 2.0 step. All objects still use the common axis y=6; no box snapping or level-specific mirror formula. Level 2.1 unchanged. Blue geometry now shares the white pit X profile (raised crown at x=12.2..13.36) and extended junction x=16.4. White floor heights derive from those blue tops plus the established box clearance, not separate unmatched constants. Blue main/right bodies now overlap 0.40 horizontally and 1.40 vertically; Green 1's narrowest blue band is 1.40 high. Main body bottom=2.70, Green 1 notch bottom=4.70. Portal tops and white floors unchanged. Thicken flag ledge downwards: bottom=5.65, top=6.85. Initial box 3 top=5.12 leaves 0.53 overhead, less than player height 0.76. White island cutout derives from the exact same rect (y=5.15..6.35). Move box 3 left out from under this ledge before using it to ascend. BLUE hanging pillar shell x=16.4..18.7, y=6.1..11.9 preserves the separate box-only barrier. Lower-left corner meets main platform upper-right corner at (16.4,6.1), with zero horizontal overlap and zero vertical gap. No ceiling over box 1's pushing area. Shell strictly mirrors to y=0.1..5.9 and remains BLUE; approved white route uses normal opposite-phase filtering."
 }

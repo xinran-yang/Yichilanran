@@ -1,0 +1,52 @@
+Level 2.2 only: geometry transaction fixture, no physical integration.
+axis=6
+Bottom before=(12.0000, 0.0500) expected=(12.0000, 11.9500) actual=(12.0000, 11.9500) phase=Neutral collider=True
+Top before=(12.0000, 11.9500) expected=(12.0000, 0.0500) actual=(12.0000, 0.0500) phase=Neutral collider=True
+Left before=(0.0500, 6.0000) expected=(0.0500, 6.0000) actual=(0.0500, 6.0000) phase=Neutral collider=True
+Right before=(23.9500, 6.0000) expected=(23.9500, 6.0000) actual=(23.9500, 6.0000) phase=Neutral collider=True
+Lower starting floor before=(1.7000, 0.5750) expected=(1.7000, 11.4250) actual=(1.7000, 11.4250) phase=Blue collider=True
+First blue stair before=(4.1500, 1.3250) expected=(4.1500, 10.6750) actual=(4.1500, 10.6750) phase=Blue collider=True
+Shallow starter notch before=(5.3000, 1.1250) expected=(5.3000, 10.8750) actual=(5.3000, 10.8750) phase=Blue collider=True
+Second blue stair before=(6.8500, 1.3250) expected=(6.8500, 10.6750) actual=(6.8500, 10.6750) phase=Blue collider=True
+Approach to yellow before=(9.2000, 0.8000) expected=(9.2000, 11.2000) actual=(9.2000, 11.2000) phase=Blue collider=True
+Yellow low shelf before=(11.5500, 0.5750) expected=(11.5500, 11.4250) actual=(11.5500, 11.4250) phase=Blue collider=True
+Left upper shelf before=(2.7000, 6.9500) expected=(2.7000, 5.0500) actual=(2.7000, 5.0500) phase=Blue collider=True
+Left wall before=(0.4000, 3.7750) expected=(0.4000, 8.2250) actual=(0.4000, 8.2250) phase=Blue collider=True
+Green 1 lower lip before=(5.6500, 5.2000) expected=(5.6500, 6.8000) actual=(5.6500, 6.8000) phase=Blue collider=True
+Green 1 underside notch before=(6.8000, 5.4000) expected=(6.8000, 6.6000) actual=(6.8000, 6.6000) phase=Blue collider=True
+Green 1 right arm before=(8.3500, 5.2500) expected=(8.3500, 6.7500) actual=(8.3500, 6.7500) phase=Blue collider=True
+Central box 2 crown before=(10.7000, 5.5000) expected=(10.7000, 6.5000) actual=(10.7000, 6.5000) phase=Blue collider=True
+Central middle body before=(13.3500, 4.4000) expected=(13.3500, 7.6000) actual=(13.3500, 7.6000) phase=Blue collider=True
+Box 2 pit counterpart crown before=(12.7800, 6.6000) expected=(12.7800, 5.4000) actual=(12.7800, 5.4000) phase=Blue collider=True
+Central descending stem before=(13.4500, 2.0500) expected=(13.4500, 9.9500) actual=(13.4500, 9.9500) phase=Blue collider=True
+Right lower arm before=(19.9500, 3.1000) expected=(19.9500, 8.9000) actual=(19.9500, 8.9000) phase=Blue collider=True
+Right upper flag ledge before=(21.9500, 6.2500) expected=(21.9500, 5.7500) actual=(21.9500, 5.7500) phase=Blue collider=True
+Right wall before=(23.5500, 5.0750) expected=(23.5500, 6.9250) actual=(23.5500, 6.9250) phase=Blue collider=True
+Blue hanging pillar shell before=(17.5500, 9.0000) expected=(17.5500, 3.0000) actual=(17.5500, 3.0000) phase=Blue collider=True
+White left region 0 before=(2.4000, 10.1700) expected=(2.4000, 1.8300) actual=(2.4000, 1.8300) phase=White collider=True
+White approach region 0 before=(8.4500, 9.5200) expected=(8.4500, 2.4800) actual=(8.4500, 2.4800) phase=White collider=True
+White box 2 pit 0 before=(12.7800, 10.0200) expected=(12.7800, 1.9800) actual=(12.7800, 1.9800) phase=White collider=True
+White middle region 0 before=(14.8800, 9.5200) expected=(14.8800, 2.4800) actual=(14.8800, 2.4800) phase=White collider=True
+White right region 0 before=(18.2000, 8.5200) expected=(18.2000, 3.4800) actual=(18.2000, 3.4800) phase=White collider=True
+White right region 1 before=(21.9500, 9.3750) expected=(21.9500, 2.6250) actual=(21.9500, 2.6250) phase=White collider=True
+White right region 2 before=(21.9500, 5.3950) expected=(21.9500, 6.6050) actual=(21.9500, 6.6050) phase=White collider=True
+White upper left pillar before=(2.0000, 4.2250) expected=(2.0000, 7.7750) actual=(2.0000, 7.7750) phase=White collider=True
+White upper left shoulder before=(4.0000, 4.9750) expected=(4.0000, 7.0250) actual=(4.0000, 7.0250) phase=White collider=True
+White upper starter step before=(4.8500, 3.6750) expected=(4.8500, 8.3250) actual=(4.8500, 8.3250) phase=White collider=True
+White upper starter notch before=(5.3000, 3.4750) expected=(5.3000, 8.5250) actual=(5.3000, 8.5250) phase=White collider=True
+White upper second step before=(6.8500, 3.6750) expected=(6.8500, 8.3250) actual=(6.8500, 8.3250) phase=White collider=True
+White upper yellow approach before=(9.2000, 3.1500) expected=(9.2000, 8.8500) actual=(9.2000, 8.8500) phase=White collider=True
+White upper yellow shelf before=(11.5500, 2.9250) expected=(11.5500, 9.0750) actual=(11.5500, 9.0750) phase=White collider=True
+White right top region before=(19.0000, 1.1000) expected=(19.0000, 10.9000) actual=(19.0000, 10.9000) phase=White collider=True
+White right hanging wall before=(14.7000, 3.1000) expected=(14.7000, 8.9000) actual=(14.7000, 8.9000) phase=White collider=True
+Box 1 before=(3.9000, 7.9200) expected=(3.9000, 4.0800) actual=(3.9000, 4.0800) phase=Blue gravityScale=0 customGravity=0 simulated=False collider=True support=Left upper shelf side=-1
+Box 2 before=(9.8000, 6.6200) expected=(9.8000, 5.3800) actual=(9.8000, 5.3800) phase=White gravityScale=0 customGravity=0 simulated=True collider=True support=Central box 2 crown side=-1
+Box 3 before=(21.3000, 4.6200) expected=(21.3000, 7.3800) actual=(21.3000, 7.3800) phase=White gravityScale=0 customGravity=0 simulated=True collider=True support=Right lower arm side=-1
+PASS extended white road meets Green 2 platform exactly at x=16.4, no horizontal gap; height difference=2
+PASS blue connection volume=0.3999996 x 1.4; Green 1 minimum blue band height=1.4; box height=1
+PASS blue hanging shell=(x:16.40, y:6.10, width:2.30, height:5.80), overhead gap=0; white-state blue shell=(x:16.40, y:0.10, width:2.30, height:5.80); opposite-phase filtering preserved.
+PASS single corner contact at (16.40, 6.10); no pillar ceiling above main-platform pushing area.
+PASS box 3 overhead gap=0.5300002 < player height=0.76; exact white island cutout=(x:20.00, y:5.15, width:3.90, height:1.20)
+PASS blue crown/pit share x=12.2..13.36; blue main/right junction=16.4; white pit derives from blue top=7.1, clearance=1.04
+PASS exact shared-axis terrain/box centers, complete flag pole and upper white silhouette.
+PASS second reflection restores all terrain/boxes and full flag.

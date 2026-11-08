@@ -1,0 +1,4 @@
+S rebound disabled; Space jump unchanged. Continuous input from 2.1 spawn.
+PASS blue terrain: max upward velocity after S=0, grounded=True
+PASS blue box 1: max upward velocity after S=0, grounded=True
+PASS blue terrain and box land normally, no positive automatic rebound velocity; transfers remain 0.

@@ -161,9 +161,9 @@ MonoBehaviour:
     rect:
       serializedVersion: 2
       x: 5.1
-      y: 4.9
+      y: 4.3
       width: 1.1
-      height: 1.2
+      height: 1.7999997
     phase: 0
     elastic: 1
     breakable: 0
@@ -172,9 +172,9 @@ MonoBehaviour:
     rect:
       serializedVersion: 2
       x: 6.2
-      y: 5.45
+      y: 4.7
       width: 1.2
-      height: 0.65
+      height: 1.4000001
     phase: 0
     elastic: 1
     breakable: 0
@@ -183,9 +183,9 @@ MonoBehaviour:
     rect:
       serializedVersion: 2
       x: 7.4
-      y: 5.15
+      y: 4.4
       width: 1.9
-      height: 0.95
+      height: 1.6999998
     phase: 0
     elastic: 1
     breakable: 0
@@ -195,8 +195,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: 9.3
       y: 4.9
-      width: 1
-      height: 2.2
+      width: 2.8
+      height: 1.2
     phase: 0
     elastic: 1
     breakable: 0
@@ -205,9 +205,20 @@ MonoBehaviour:
     rect:
       serializedVersion: 2
       x: 10.3
-      y: 4
-      width: 5
-      height: 2.1
+      y: 2.7
+      width: 6.0999994
+      height: 3.3999999
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Box 2 pit counterpart crown
+    rect:
+      serializedVersion: 2
+      x: 12.2
+      y: 6.1
+      width: 1.16
+      height: 1
     phase: 0
     elastic: 1
     breakable: 0
@@ -226,9 +237,9 @@ MonoBehaviour:
   - id: Right lower arm
     rect:
       serializedVersion: 2
-      x: 15.2
+      x: 16
       y: 2.1
-      width: 8.7
+      width: 7.8999996
       height: 2
     phase: 0
     elastic: 1
@@ -238,9 +249,9 @@ MonoBehaviour:
     rect:
       serializedVersion: 2
       x: 20
-      y: 6.05
+      y: 5.65
       width: 3.9
-      height: 0.8
+      height: 1.1999998
     phase: 0
     elastic: 1
     breakable: 0
@@ -267,6 +278,17 @@ MonoBehaviour:
     elastic: 0
     breakable: 0
     kind: 3
+  - id: Blue hanging pillar shell
+    rect:
+      serializedVersion: 2
+      x: 16.4
+      y: 6.1
+      width: 2.3000011
+      height: 5.7999997
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
   - id: White left region 0
     rect:
       serializedVersion: 2
@@ -283,19 +305,19 @@ MonoBehaviour:
       serializedVersion: 2
       x: 4.7
       y: 7.14
-      width: 4.56
+      width: 7.5
       height: 4.76
     phase: 1
     elastic: 0
     breakable: 0
     kind: 0
-  - id: White pit region 0
+  - id: White box 2 pit 0
     rect:
       serializedVersion: 2
-      x: 9.26
-      y: 8.14
-      width: 1.08
-      height: 3.76
+      x: 12.2
+      y: 8.139999
+      width: 1.16
+      height: 3.7600002
     phase: 1
     elastic: 0
     breakable: 0
@@ -303,9 +325,9 @@ MonoBehaviour:
   - id: White middle region 0
     rect:
       serializedVersion: 2
-      x: 10.34
+      x: 13.36
       y: 7.14
-      width: 4.96
+      width: 3.04
       height: 4.76
     phase: 1
     elastic: 0
@@ -314,9 +336,9 @@ MonoBehaviour:
   - id: White right region 0
     rect:
       serializedVersion: 2
-      x: 15.3
+      x: 16.4
       y: 5.14
-      width: 4.7
+      width: 3.6000004
       height: 6.76
     phase: 1
     elastic: 0
@@ -326,9 +348,9 @@ MonoBehaviour:
     rect:
       serializedVersion: 2
       x: 20
-      y: 6.8500004
+      y: 6.85
       width: 3.8999996
-      height: 5.0499997
+      height: 5.05
     phase: 1
     elastic: 0
     breakable: 0
@@ -339,7 +361,106 @@ MonoBehaviour:
       x: 20
       y: 5.14
       width: 3.8999996
-      height: 0.9100003
+      height: 0.5100002
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White upper left pillar
+    rect:
+      serializedVersion: 2
+      x: 0.7
+      y: 1.0500002
+      width: 2.6
+      height: 6.35
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White upper left shoulder
+    rect:
+      serializedVersion: 2
+      x: 3.3
+      y: 2.5500002
+      width: 1.4
+      height: 4.85
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White upper starter step
+    rect:
+      serializedVersion: 2
+      x: 4.7
+      y: 2.5500002
+      width: 0.3
+      height: 2.25
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White upper starter notch
+    rect:
+      serializedVersion: 2
+      x: 5
+      y: 2.1499996
+      width: 0.6
+      height: 2.6500006
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White upper second step
+    rect:
+      serializedVersion: 2
+      x: 5.6
+      y: 2.5500002
+      width: 2.5
+      height: 2.25
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White upper yellow approach
+    rect:
+      serializedVersion: 2
+      x: 8.1
+      y: 1.5
+      width: 2.2
+      height: 3.3000002
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White upper yellow shelf
+    rect:
+      serializedVersion: 2
+      x: 10.3
+      y: 1.0500002
+      width: 2.5
+      height: 3.75
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White right top region
+    rect:
+      serializedVersion: 2
+      x: 14.1
+      y: 0.10000038
+      width: 9.8
+      height: 2
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White right hanging wall
+    rect:
+      serializedVersion: 2
+      x: 14.1
+      y: 2.1000004
+      width: 1.2
+      height: 1.9999995
     phase: 1
     elastic: 0
     breakable: 0
@@ -349,7 +470,7 @@ MonoBehaviour:
     center: {x: 3.9, y: 7.92}
     phase: 0
   - id: Box 2
-    center: {x: 9.8, y: 7.62}
+    center: {x: 9.8, y: 6.62}
     phase: 1
   - id: Box 3
     center: {x: 21.3, y: 4.62}
@@ -362,6 +483,8 @@ MonoBehaviour:
     green: 0
     allowSolo: 1
     allowBox: 0
+    hasMirroredFloor: 1
+    mirroredFloor: 10.95
   - id: Green 1
     x: 5.3
     width: 3.1
@@ -369,6 +492,8 @@ MonoBehaviour:
     green: 1
     allowSolo: 1
     allowBox: 1
+    hasMirroredFloor: 1
+    mirroredFloor: 4.86
   - id: Green 2
     x: 16.6
     width: 3.1
@@ -376,10 +501,27 @@ MonoBehaviour:
     green: 1
     allowSolo: 1
     allowBox: 1
-  routeNotes: Reference 2.2.1map.png / 2.2.2map.jpg + oral route. Yellow -> green
-    1 solo -> push blue 1 off upper shelf -> green 1 carry -> white 1 across white
-    2's filled gap -> white right ledge -> move white 3 out from below flag to green
-    2 -> blue 3 -> flag. Crown height calibrated so box 2 top fills the 1.08-wide
-    white-road gap after strict mirror. Upper barrier is box-only. Flag lower face
-    leaves 0.17 above a standing player on initial box 3; move box out before final
-    jump.
+    hasMirroredFloor: 1
+    mirroredFloor: 6.86
+  routeNotes: 'Corrected white upper silhouette and blue corridor from 2026-11-09
+    drawing. Box 2 starts on an extended 2.8-wide crown, lowered by 1.0 for a strict
+    mirrored position on the white road; push it RIGHT into the new 1.16-wide pit
+    at x=12.2..13.36 after yellow. Box 2 no longer starts as an automatic filler.
+    Green 1 white corridor clearance 2.34. Extend white box-2 road from x=15.3 to
+    x=16.4, exactly adjoining Green 2''s right platform; move box 1 farther right
+    and use it to climb the unchanged 2.0 step. All objects still use the common
+    axis y=6; no box snapping or level-specific mirror formula. Level 2.1 unchanged.
+    Blue geometry now shares the white pit X profile (raised crown at x=12.2..13.36)
+    and extended junction x=16.4. White floor heights derive from those blue tops
+    plus the established box clearance, not separate unmatched constants. Blue main/right
+    bodies now overlap 0.40 horizontally and 1.40 vertically; Green 1''s narrowest
+    blue band is 1.40 high. Main body bottom=2.70, Green 1 notch bottom=4.70. Portal
+    tops and white floors unchanged. Thicken flag ledge downwards: bottom=5.65, top=6.85.
+    Initial box 3 top=5.12 leaves 0.53 overhead, less than player height 0.76. White
+    island cutout derives from the exact same rect (y=5.15..6.35). Move box 3 left
+    out from under this ledge before using it to ascend. BLUE hanging pillar shell
+    x=16.4..18.7, y=6.1..11.9 preserves the separate box-only barrier. Lower-left
+    corner meets main platform upper-right corner at (16.4,6.1), with zero horizontal
+    overlap and zero vertical gap. No ceiling over box 1''s pushing area. Shell strictly
+    mirrors to y=0.1..5.9 and remains BLUE; approved white route uses normal opposite-phase
+    filtering.'

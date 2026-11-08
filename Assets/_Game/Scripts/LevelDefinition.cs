@@ -25,8 +25,10 @@ namespace YiChiLanRan
     [Serializable] public struct ZoneSpec
     {
         public string id; public float x, width, floor; public bool green, allowSolo, allowBox;
+        public bool hasMirroredFloor;
+        public float mirroredFloor;
         public ZoneSpec(string id,float x,float width,float floor,bool green,bool solo=true)
-        { this.id=id; this.x=x; this.width=width; this.floor=floor; this.green=green; allowSolo=solo; allowBox=green; }
+        { this.id=id; this.x=x; this.width=width; this.floor=floor; this.green=green; allowSolo=solo; allowBox=green; hasMirroredFloor=false; mirroredFloor=0; }
     }
     [CreateAssetMenu(menuName="YiChiLanRan/Level Definition")]
     public sealed class LevelDefinition : ScriptableObject
@@ -46,6 +48,9 @@ namespace YiChiLanRan
     {
         public const float PlayerWidth=.56f, PlayerHeight=.76f, BoxSize=1f;
         public const float Speed=5.2f, Gravity=36f, Jump=9.2f, BlueJump=11.5f, Bounce=13.98f, Dive=21f, MaxFall=12.4f;
+        // Playability demo: S is for diving/transferring, without automatic elastic rebound.
+        // Keep the original tuning so this optional material behaviour can return later.
+        public static readonly bool EnableDiveBounce=false;
         public const float Step=1f/120f, Skin=.02f;
         public static Phase Opposite(Phase phase) => phase==Phase.Blue ? Phase.White : Phase.Blue;
         public static Rect RectAt(Vector2 p, Vector2 size) => new Rect(p-size/2,size);

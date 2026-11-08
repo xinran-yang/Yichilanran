@@ -1,0 +1,2 @@
+PASS explicit BLUE box/player fixture: repeated rightward jump attempts under flag ledge blocked.
+max feet=4.875039; box top=5.12; ceiling=5.65; player height=0.76
