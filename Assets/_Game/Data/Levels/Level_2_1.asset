@@ -1,0 +1,322 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b44a040f9ad6143bb302b9f7e8975f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YiChiLanRan.LevelDefinition
+  levelId: 2.1
+  nextScene: Level_2_2
+  mirrorAxis: 6
+  mirrorInspection: 0
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 24
+    height: 12
+  spawn: {x: 1, y: 1.65}
+  goal: {x: 22.1, y: 8.73}
+  terrain:
+  - id: Bottom
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 24
+      height: 0.1
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Top
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 11.9
+      width: 24
+      height: 0.1
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Left
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.1
+      height: 12
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Right
+    rect:
+      serializedVersion: 2
+      x: 23.9
+      y: 0
+      width: 0.1
+      height: 12
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Starting blue floor
+    rect:
+      serializedVersion: 2
+      x: 0.1
+      y: 0.1
+      width: 4.3
+      height: 1.15
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Main blue plateau
+    rect:
+      serializedVersion: 2
+      x: 4.4
+      y: 0.1
+      width: 8.700001
+      height: 1.9
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Recess bottom
+    rect:
+      serializedVersion: 2
+      x: 13.1
+      y: 0.1
+      width: 4.6000004
+      height: 0.84999996
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Right blue plateau
+    rect:
+      serializedVersion: 2
+      x: 17.7
+      y: 0.1
+      width: 6.199999
+      height: 3.6000001
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Independent middle blue ledge
+    rect:
+      serializedVersion: 2
+      x: 11.8
+      y: 5.7999997
+      width: 6.5
+      height: 0.65
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Upper flag ledge
+    rect:
+      serializedVersion: 2
+      x: 16.1
+      y: 7.4999995
+      width: 7.4
+      height: 0.65
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: White start region 0
+    rect:
+      serializedVersion: 2
+      x: 0.1
+      y: 2.29
+      width: 4.3
+      height: 9.61
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White main region 0
+    rect:
+      serializedVersion: 2
+      x: 4.4
+      y: 3.04
+      width: 7.4
+      height: 8.86
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White main region 1
+    rect:
+      serializedVersion: 2
+      x: 11.8
+      y: 6.45
+      width: 1.3000002
+      height: 5.4500003
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White main region 2
+    rect:
+      serializedVersion: 2
+      x: 11.8
+      y: 3.04
+      width: 1.3000002
+      height: 2.7599998
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White central column 0
+    rect:
+      serializedVersion: 2
+      x: 13.1
+      y: 6.45
+      width: 3
+      height: 5.4500003
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White central column 1
+    rect:
+      serializedVersion: 2
+      x: 16.1
+      y: 8.15
+      width: 1.6000004
+      height: 3.7500005
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White central column 2
+    rect:
+      serializedVersion: 2
+      x: 16.1
+      y: 6.45
+      width: 1.6000004
+      height: 1.0499997
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White central column 3
+    rect:
+      serializedVersion: 2
+      x: 13.1
+      y: 0.9499998
+      width: 4.6000004
+      height: 4.85
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White right region 0
+    rect:
+      serializedVersion: 2
+      x: 23.5
+      y: 4.74
+      width: 0.39999962
+      height: 7.1600003
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White right region 1
+    rect:
+      serializedVersion: 2
+      x: 18.3
+      y: 8.15
+      width: 5.200001
+      height: 3.7500005
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White right region 2
+    rect:
+      serializedVersion: 2
+      x: 18.3
+      y: 4.74
+      width: 5.200001
+      height: 2.7599998
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White right region 3
+    rect:
+      serializedVersion: 2
+      x: 17.7
+      y: 8.15
+      width: 0.5999985
+      height: 3.7500005
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White right region 4
+    rect:
+      serializedVersion: 2
+      x: 17.7
+      y: 6.45
+      width: 0.5999985
+      height: 1.0499997
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White right region 5
+    rect:
+      serializedVersion: 2
+      x: 17.7
+      y: 4.74
+      width: 0.5999985
+      height: 1.06
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  boxes:
+  - id: Box 1
+    center: {x: 3.1, y: 1.77}
+    phase: 0
+  - id: Box 2
+    center: {x: 6.9, y: 2.52}
+    phase: 1
+  - id: Box 3
+    center: {x: 19, y: 4.2200003}
+    phase: 1
+  zones:
+  - id: Yellow
+    x: 5.3
+    width: 3.1
+    floor: 2
+    green: 0
+    allowSolo: 1
+    allowBox: 0
+  - id: Green
+    x: 20.3
+    width: 3.2
+    floor: 3.7
+    green: 1
+    allowSolo: 1
+    allowBox: 1
+  routeNotes: No extra white relay. Lower yellow-side blue plateau to 2.0; white
+    floor follows the same source dimensions. Pit width 4.6 and right green rise
+    2.75 prevent direct ordinary/bounce exit and main-to-green shortcuts. Raise existing
+    right-hand climbing ledges together by 0.7 to retain the blue-box-3 ascent. Start
+    floor thickened one box-height. White terrain fill, collision and ink boundary
+    are one geometry; flag reflects complete visual hierarchy.

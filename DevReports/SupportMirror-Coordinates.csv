@@ -1,0 +1,6 @@
+cycle,axis,boxBeforeX,boxBeforeY,boxAfterX,boxAfterY,platformBeforeY,platformAfterY,playerColor,boxColor,simulated,gravityScale,customGravityY,support,side,heldYError
+0,6,9,4.02,9,7.98,3.25,8.75,White,Blue,False,0,0,Reference platform,-1,0
+1,6,9,7.98,9,4.02,8.75,3.25,Blue,Blue,True,0,0,Reference platform,1,0
+2,6,9,4.02,9,7.98,3.25,8.75,White,Blue,False,0,0,Reference platform,-1,0
+3,6,9,7.98,9,4.02,8.75,3.25,Blue,Blue,True,0,0,Reference platform,1,0
+4,6,9,4.02,9,7.98,3.25,8.75,White,Blue,False,0,0,Reference platform,-1,0

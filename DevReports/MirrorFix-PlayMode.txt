@@ -1,0 +1,68 @@
+Unity 6000.3.28f1 actual Play Mode mirror lock checks
+PASS Case 0 uses production FixedUpdate and animated transaction
+PASS Case 0 begins on legitimate support
+PASS Case 0 freezes all bodies and clears gravity/velocity before transform
+PASS Case 0 remains locked through post-commit animation
+PASS Case 0 audits every box, including disabled body
+PASS Case 0 exact committed pose Box 1
+PASS Case 0 exact committed pose Box 2
+PASS Case 0 exact committed pose Box 3
+PASS Case 0 releases transaction lock
+PASS Case 0 restores simulation/interpolation/gravity, including disabled box
+PASS Case 0 verifies pose at resume Box 1
+PASS Case 0 verifies pose at resume Box 2
+PASS Case 0 verifies pose at resume Box 3
+PASS Case 0 box color independent of geometry
+PASS Case 0 safe player landing stays upright
+PASS Case 0 has correct native collision filters after resume
+PASS Case 0 unsupported box falls only after normal simulation resumes (not a mirror snap)
+PASS Case 1 uses production FixedUpdate and animated transaction
+PASS Case 1 begins on legitimate support
+PASS Case 1 freezes all bodies and clears gravity/velocity before transform
+PASS Case 1 remains locked through post-commit animation
+PASS Case 1 audits every box, including disabled body
+PASS Case 1 exact committed pose Box 1
+PASS Case 1 exact committed pose Box 2
+PASS Case 1 exact committed pose Box 3
+PASS Case 1 releases transaction lock
+PASS Case 1 restores simulation/interpolation/gravity, including disabled box
+PASS Case 1 verifies pose at resume Box 1
+PASS Case 1 verifies pose at resume Box 2
+PASS Case 1 verifies pose at resume Box 3
+PASS Case 1 box color independent of geometry
+PASS Case 1 safe player landing stays upright
+PASS Case 1 has correct native collision filters after resume
+PASS Case 1 unsupported box falls only after normal simulation resumes (not a mirror snap)
+PASS Case 2 uses production FixedUpdate and animated transaction
+PASS Case 2 begins on legitimate support
+PASS Case 2 freezes all bodies and clears gravity/velocity before transform
+PASS Case 2 remains locked through post-commit animation
+PASS Case 2 audits every box, including disabled body
+PASS Case 2 exact committed pose Box 1
+PASS Case 2 exact committed pose Box 2
+PASS Case 2 exact committed pose Box 3
+PASS Case 2 releases transaction lock
+PASS Case 2 restores simulation/interpolation/gravity, including disabled box
+PASS Case 2 verifies pose at resume Box 1
+PASS Case 2 verifies pose at resume Box 2
+PASS Case 2 verifies pose at resume Box 3
+PASS Case 2 box color independent of geometry
+PASS Case 2 safe player landing stays upright
+PASS Case 2 has correct native collision filters after resume
+PASS Case 2 unsupported box falls only after normal simulation resumes (not a mirror snap)
+PASS Case 3 uses production FixedUpdate and animated transaction
+PASS Case 3 begins on legitimate support
+PASS Case 3 freezes all bodies and clears gravity/velocity before transform
+PASS Reset cancels pending mirror at stage before commit
+PASS Reset restores source color and disabled-body state
+PASS Case 4 uses production FixedUpdate and animated transaction
+PASS Case 4 begins on legitimate support
+PASS Case 4 freezes all bodies and clears gravity/velocity before transform
+PASS Case 4 remains locked through post-commit animation
+PASS Case 4 audits every box, including disabled body
+PASS Case 4 exact committed pose Box 1
+PASS Case 4 exact committed pose Box 2
+PASS Case 4 exact committed pose Box 3
+PASS Reset cancels pending mirror at stage after commit
+PASS Reset restores source color and disabled-body state
+LIMIT This fixture tests actual production animation and physics lifecycle, not the currently blocked puzzle routes.

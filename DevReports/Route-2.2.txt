@@ -1,0 +1,7 @@
+PASS Unity Rigidbody2D full input-driven route 2.2
+Yellow solo
+Green 1 solo
+Green 1 + Box 1
+Green 2 + Box 3
+player=(x:21.68, y:7.05, width:0.56, height:0.76) grounded=True phase=Blue transfers=4 event=Level complete rejection=
+PASS reset after completion and while transfer-locked restores complete initial state

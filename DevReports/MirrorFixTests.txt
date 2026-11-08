@@ -1,0 +1,558 @@
+Unity 6000.3.28f1 strict mirror regression
+PASS Dive fixture primed
+PASS Transfer accepted: yellow axis=-2.75 source=Blue offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-solo axis=-2.75 source=Blue offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-box axis=-2.75 source=Blue offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: yellow axis=-2.75 source=White offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-solo axis=-2.75 source=White offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-box axis=-2.75 source=White offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: yellow axis=6 source=Blue offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-solo axis=6 source=Blue offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-box axis=6 source=Blue offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: yellow axis=6 source=White offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-solo axis=6 source=White offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-box axis=6 source=White offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: yellow axis=11.125 source=Blue offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-solo axis=11.125 source=Blue offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-box axis=11.125 source=Blue offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: yellow axis=11.125 source=White offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-solo axis=11.125 source=White offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-box axis=11.125 source=White offset=False
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Transfer accepted: green-box axis=6 source=Blue offset=True
+PASS Exact pivot mirror: Green support
+PASS Exact collider-center mirror: Green support
+PASS Phase independent from geometry: Green support
+PASS Exact pivot mirror: Yellow support
+PASS Exact collider-center mirror: Yellow support
+PASS Phase independent from geometry: Yellow support
+PASS Exact pivot mirror: Remote neutral catch
+PASS Exact collider-center mirror: Remote neutral catch
+PASS Phase independent from geometry: Remote neutral catch
+PASS Exact pivot mirror: Box 1
+PASS Exact collider-center mirror: Box 1
+PASS Phase independent from geometry: Box 1
+PASS Exact pivot mirror: Box 2
+PASS Exact collider-center mirror: Box 2
+PASS Phase independent from geometry: Box 2
+PASS Exact pivot mirror: Box 3
+PASS Exact collider-center mirror: Box 3
+PASS Phase independent from geometry: Box 3
+PASS All blue and white boxes audited
+PASS Verified frozen/resume audit: Box 1
+PASS Verified frozen/resume audit: Box 2
+PASS Verified frozen/resume audit: Box 3
+PASS Rigidbody configuration restored, disabled body remains disabled
+PASS Physics lock released; player remains upright
+PASS No pre-transfer velocity leaks into commit
+PASS Collision filtering reapplied after simulation resumes
+PASS Dive fixture primed
+PASS Double mirror first transfer
+PASS Double mirror second transfer: 
+PASS Two mirrors restore original pose: Green support
+PASS Two mirrors restore original pose: Yellow support
+PASS Two mirrors restore original pose: Remote neutral catch
+PASS Two mirrors restore original pose: Box 1
+PASS Two mirrors restore original pose: Box 2
+PASS Two mirrors restore original pose: Box 3
+PASS Two mirrors restore collider offset
+PASS Dive fixture primed
+PASS Unsafe exact target rejected instead of snapping box above floor
+PASS Unsafe transfer changes no box/world/physics state
+PASS Dive fixture primed
+PASS Stale-plan fixture prepared
+PASS Changed source rejects stale plan without physics side effects
+PASS Measured actual jump: white 1.137499
+PASS Measured actual jump: blue 1.789165
+PASS Measured actual jump: bounce 2.656498
+PASS Dive fixture primed
+PASS Current map exposes strict-target overlap: 2.1 Green
+PASS Dive fixture primed
+PASS Current map exposes strict-target overlap: 2.2 Green 1
+PASS Dive fixture primed
+PASS Current map exposes strict-target overlap: 2.2 Green 2

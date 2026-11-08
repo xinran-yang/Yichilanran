@@ -1,0 +1,385 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b44a040f9ad6143bb302b9f7e8975f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YiChiLanRan.LevelDefinition
+  levelId: 2.2
+  nextScene: 
+  mirrorAxis: 6
+  mirrorInspection: 0
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 24
+    height: 12
+  spawn: {x: 1.2, y: 1.45}
+  goal: {x: 22.1, y: 7.43}
+  terrain:
+  - id: Bottom
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 24
+      height: 0.1
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Top
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 11.9
+      width: 24
+      height: 0.1
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Left
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.1
+      height: 12
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Right
+    rect:
+      serializedVersion: 2
+      x: 23.9
+      y: 0
+      width: 0.1
+      height: 12
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Lower starting floor
+    rect:
+      serializedVersion: 2
+      x: 0.1
+      y: 0.1
+      width: 3.2
+      height: 0.95
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: First blue stair
+    rect:
+      serializedVersion: 2
+      x: 3.3
+      y: 0.1
+      width: 1.7
+      height: 2.45
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Shallow starter notch
+    rect:
+      serializedVersion: 2
+      x: 5
+      y: 0.1
+      width: 0.6
+      height: 2.05
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Second blue stair
+    rect:
+      serializedVersion: 2
+      x: 5.6
+      y: 0.1
+      width: 2.5
+      height: 2.45
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Approach to yellow
+    rect:
+      serializedVersion: 2
+      x: 8.1
+      y: 0.1
+      width: 2.2
+      height: 1.4
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Yellow low shelf
+    rect:
+      serializedVersion: 2
+      x: 10.3
+      y: 0.1
+      width: 2.5
+      height: 0.95
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Left upper shelf
+    rect:
+      serializedVersion: 2
+      x: 0.1
+      y: 6.5
+      width: 5.2
+      height: 0.9
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Left wall
+    rect:
+      serializedVersion: 2
+      x: 0.1
+      y: 1.05
+      width: 0.6
+      height: 5.45
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Green 1 lower lip
+    rect:
+      serializedVersion: 2
+      x: 5.1
+      y: 4.9
+      width: 1.1
+      height: 1.2
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Green 1 underside notch
+    rect:
+      serializedVersion: 2
+      x: 6.2
+      y: 5.45
+      width: 1.2
+      height: 0.65
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Green 1 right arm
+    rect:
+      serializedVersion: 2
+      x: 7.4
+      y: 5.15
+      width: 1.9
+      height: 0.95
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Central box 2 crown
+    rect:
+      serializedVersion: 2
+      x: 9.3
+      y: 4.9
+      width: 1
+      height: 2.2
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Central middle body
+    rect:
+      serializedVersion: 2
+      x: 10.3
+      y: 4
+      width: 5
+      height: 2.1
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Central descending stem
+    rect:
+      serializedVersion: 2
+      x: 12.8
+      y: 0.1
+      width: 1.3
+      height: 3.9
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Right lower arm
+    rect:
+      serializedVersion: 2
+      x: 15.2
+      y: 2.1
+      width: 8.7
+      height: 2
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Right upper flag ledge
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 6.05
+      width: 3.9
+      height: 0.8
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Right wall
+    rect:
+      serializedVersion: 2
+      x: 23.2
+      y: 4.1
+      width: 0.7
+      height: 1.95
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: Vertical box-only barrier
+    rect:
+      serializedVersion: 2
+      x: 17.2
+      y: 7.1
+      width: 1.5
+      height: 4.8
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 3
+  - id: White left region 0
+    rect:
+      serializedVersion: 2
+      x: 0.1
+      y: 8.440001
+      width: 4.6
+      height: 3.46
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White approach region 0
+    rect:
+      serializedVersion: 2
+      x: 4.7
+      y: 7.14
+      width: 4.56
+      height: 4.76
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White pit region 0
+    rect:
+      serializedVersion: 2
+      x: 9.26
+      y: 8.14
+      width: 1.08
+      height: 3.76
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White middle region 0
+    rect:
+      serializedVersion: 2
+      x: 10.34
+      y: 7.14
+      width: 4.96
+      height: 4.76
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White right region 0
+    rect:
+      serializedVersion: 2
+      x: 15.3
+      y: 5.14
+      width: 4.7
+      height: 6.76
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White right region 1
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 6.8500004
+      width: 3.8999996
+      height: 5.0499997
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: White right region 2
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 5.14
+      width: 3.8999996
+      height: 0.9100003
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  boxes:
+  - id: Box 1
+    center: {x: 3.9, y: 7.92}
+    phase: 0
+  - id: Box 2
+    center: {x: 9.8, y: 7.62}
+    phase: 1
+  - id: Box 3
+    center: {x: 21.3, y: 4.62}
+    phase: 1
+  zones:
+  - id: Yellow
+    x: 10.4
+    width: 2.3
+    floor: 1.05
+    green: 0
+    allowSolo: 1
+    allowBox: 0
+  - id: Green 1
+    x: 5.3
+    width: 3.1
+    floor: 6.1
+    green: 1
+    allowSolo: 1
+    allowBox: 1
+  - id: Green 2
+    x: 16.6
+    width: 3.1
+    floor: 4.1
+    green: 1
+    allowSolo: 1
+    allowBox: 1
+  routeNotes: Reference 2.2.1map.png / 2.2.2map.jpg + oral route. Yellow -> green
+    1 solo -> push blue 1 off upper shelf -> green 1 carry -> white 1 across white
+    2's filled gap -> white right ledge -> move white 3 out from below flag to green
+    2 -> blue 3 -> flag. Crown height calibrated so box 2 top fills the 1.08-wide
+    white-road gap after strict mirror. Upper barrier is box-only. Flag lower face
+    leaves 0.17 above a standing player on initial box 3; move box out before final
+    jump.

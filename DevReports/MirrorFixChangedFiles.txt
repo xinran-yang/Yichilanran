@@ -1,0 +1,12 @@
+Assets/_Game/Scripts/WorldMirrorSystem.cs
+Assets/_Game/Scripts/LevelRuntime.cs
+Assets/_Game/Scripts/PlayerController2D.cs
+Assets/_Game/Scripts/PhaseObject.cs
+Assets/_Game/Scripts/PhaseCollisionSystem.cs
+Assets/_Game/Scripts/MirrorBoxAudit.cs
+Assets/_Game/Scripts/MirrorBoxAudit.cs.meta
+AGENTS.md
+Docs/UnityGreyboxDemo_Guide.md
+
+No terrain, scene, prefab, art, jump parameter, or project-setting changes in this fix.
+Additional test fixtures are archived outside Assets. No further tests after the user's stop instruction.

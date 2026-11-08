@@ -1,0 +1,17 @@
+Unity 6000.3.28f1 targeted regression
+PASS Viewport preserves 16:9 at (1920, 1080)
+PASS Viewport preserves 16:9 at (1600, 900)
+PASS Viewport preserves 16:9 at (1280, 720)
+PASS Viewport preserves 16:9 at (1366, 768)
+PASS Viewport preserves 16:9 at (800, 600)
+PASS Full world fits unchanged orthographic view with HUD margins
+PASS G1 repeated white jumps/dives cannot reach right ledge/Green 2 after first yellow
+PASS G1 measured feet peak 9.055 below right ledge 9.950
+PASS White filler box cannot provide blue bounce
+PASS G3 real physics push cannot pass box-only barrier
+PASS G3 player crosses same barrier with normal input
+PASS Initial blue jump/dive attempts do not access upper Green 1 shelf
+PASS G4 box 3 initial roof clearance smaller than upright player
+PASS G4 even roof-assisted blue bounce cannot reach Green 2 upper shelf
+LIMIT These are targeted physical attempts plus geometric bounds, not an exhaustive proof against every possible input sequence.
+LIMIT Headless run verifies viewport calculations, not desktop window appearance or human keyboard feel.

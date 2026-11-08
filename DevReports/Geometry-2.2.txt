@@ -1,0 +1,10 @@
+Geometry validation: 2.2
+PASS initial box clear: Box 1
+PASS initial box clear: Box 2
+PASS initial box clear: Box 3
+PASS initial player clear
+PASS ground bounce 2.714 < ledge 2.780 < box + blue jump 2.837 (continuous model; physics route pending)
+PASS G1 right rise 2.05 requires box 1, white jump < rise < box + jump
+PASS G2 pit width 1.08 for square box width 1.00 (contact clearance); actual pushing requires physics regression
+PASS G3 box-only barrier collision rule checked in mechanics suite
+PASS G4 initial blue roof leaves only 0.25 above box 3, less than player 0.76

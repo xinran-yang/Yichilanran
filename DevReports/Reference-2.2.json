@@ -1,0 +1,485 @@
+{
+    "levelId": "2.2",
+    "nextScene": "",
+    "mirrorAxis": 6.0,
+    "mirrorInspection": false,
+    "bounds": {
+        "serializedVersion": "2",
+        "x": 0.0,
+        "y": 0.0,
+        "width": 24.0,
+        "height": 12.0
+    },
+    "spawn": {
+        "x": 1.2000000476837159,
+        "y": 1.4500000476837159
+    },
+    "goal": {
+        "x": 22.100000381469728,
+        "y": 7.429999828338623
+    },
+    "terrain": [
+        {
+            "id": "Bottom",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 24.0,
+                "height": 0.10000000149011612
+            },
+            "phase": 2,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Top",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 11.899999618530274,
+                "width": 24.0,
+                "height": 0.10000000149011612
+            },
+            "phase": 2,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Left",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 0.10000000149011612,
+                "height": 12.0
+            },
+            "phase": 2,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Right",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 23.899999618530275,
+                "y": 0.0,
+                "width": 0.10000000149011612,
+                "height": 12.0
+            },
+            "phase": 2,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Lower starting floor",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.10000000149011612,
+                "y": 0.10000000149011612,
+                "width": 3.200000047683716,
+                "height": 0.949999988079071
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "First blue stair",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 3.299999952316284,
+                "y": 0.10000000149011612,
+                "width": 1.7000000476837159,
+                "height": 2.450000047683716
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Shallow starter notch",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 5.0,
+                "y": 0.10000000149011612,
+                "width": 0.6000000238418579,
+                "height": 2.049999952316284
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Second blue stair",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 5.599999904632568,
+                "y": 0.10000000149011612,
+                "width": 2.5,
+                "height": 2.450000047683716
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Approach to yellow",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 8.100000381469727,
+                "y": 0.10000000149011612,
+                "width": 2.200000047683716,
+                "height": 1.399999976158142
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Yellow low shelf",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 10.300000190734864,
+                "y": 0.10000000149011612,
+                "width": 2.5,
+                "height": 0.949999988079071
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Left upper shelf",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.10000000149011612,
+                "y": 6.5,
+                "width": 5.199999809265137,
+                "height": 0.8999999761581421
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Left wall",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.10000000149011612,
+                "y": 1.0499999523162842,
+                "width": 0.6000000238418579,
+                "height": 5.449999809265137
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Green 1 lower lip",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 5.099999904632568,
+                "y": 4.900000095367432,
+                "width": 1.100000023841858,
+                "height": 1.2000000476837159
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Green 1 underside notch",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 6.199999809265137,
+                "y": 5.449999809265137,
+                "width": 1.2000000476837159,
+                "height": 0.6499999761581421
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Green 1 right arm",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 7.400000095367432,
+                "y": 5.150000095367432,
+                "width": 1.899999976158142,
+                "height": 0.949999988079071
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Central box 2 crown",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 9.300000190734864,
+                "y": 4.900000095367432,
+                "width": 1.0,
+                "height": 2.200000047683716
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Central middle body",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 10.300000190734864,
+                "y": 4.0,
+                "width": 5.0,
+                "height": 2.0999999046325685
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Central descending stem",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 12.800000190734864,
+                "y": 0.10000000149011612,
+                "width": 1.2999999523162842,
+                "height": 3.9000000953674318
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Right lower arm",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 15.199999809265137,
+                "y": 2.0999999046325685,
+                "width": 8.699999809265137,
+                "height": 2.0
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Right upper flag ledge",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 20.0,
+                "y": 6.050000190734863,
+                "width": 3.9000000953674318,
+                "height": 0.800000011920929
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Right wall",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 23.200000762939454,
+                "y": 4.099999904632568,
+                "width": 0.699999988079071,
+                "height": 1.9500000476837159
+            },
+            "phase": 0,
+            "elastic": true,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "Vertical box-only barrier",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 17.200000762939454,
+                "y": 7.099999904632568,
+                "width": 1.5,
+                "height": 4.800000190734863
+            },
+            "phase": 2,
+            "elastic": false,
+            "breakable": false,
+            "kind": 3
+        },
+        {
+            "id": "White left region 0",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.10000000149011612,
+                "y": 8.440000534057618,
+                "width": 4.599999904632568,
+                "height": 3.4600000381469728
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White approach region 0",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 4.699999809265137,
+                "y": 7.139999866485596,
+                "width": 4.559999942779541,
+                "height": 4.760000228881836
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White pit region 0",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 9.260000228881836,
+                "y": 8.140000343322754,
+                "width": 1.0800000429153443,
+                "height": 3.759999990463257
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White middle region 0",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 10.34000015258789,
+                "y": 7.139999866485596,
+                "width": 4.960000038146973,
+                "height": 4.760000228881836
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White right region 0",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 15.300000190734864,
+                "y": 5.139999866485596,
+                "width": 4.699999809265137,
+                "height": 6.760000228881836
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White right region 1",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 20.0,
+                "y": 6.850000381469727,
+                "width": 3.8999996185302736,
+                "height": 5.049999713897705
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        },
+        {
+            "id": "White right region 2",
+            "rect": {
+                "serializedVersion": "2",
+                "x": 20.0,
+                "y": 5.139999866485596,
+                "width": 3.8999996185302736,
+                "height": 0.9100003242492676
+            },
+            "phase": 1,
+            "elastic": false,
+            "breakable": false,
+            "kind": 0
+        }
+    ],
+    "boxes": [
+        {
+            "id": "Box 1",
+            "center": {
+                "x": 3.9000000953674318,
+                "y": 7.920000076293945
+            },
+            "phase": 0
+        },
+        {
+            "id": "Box 2",
+            "center": {
+                "x": 9.800000190734864,
+                "y": 7.619999885559082
+            },
+            "phase": 1
+        },
+        {
+            "id": "Box 3",
+            "center": {
+                "x": 21.299999237060548,
+                "y": 4.619999885559082
+            },
+            "phase": 1
+        }
+    ],
+    "zones": [
+        {
+            "id": "Yellow",
+            "x": 10.399999618530274,
+            "width": 2.299999952316284,
+            "floor": 1.0499999523162842,
+            "green": false,
+            "allowSolo": true,
+            "allowBox": false
+        },
+        {
+            "id": "Green 1",
+            "x": 5.300000190734863,
+            "width": 3.0999999046325685,
+            "floor": 6.099999904632568,
+            "green": true,
+            "allowSolo": true,
+            "allowBox": true
+        },
+        {
+            "id": "Green 2",
+            "x": 16.600000381469728,
+            "width": 3.0999999046325685,
+            "floor": 4.099999904632568,
+            "green": true,
+            "allowSolo": true,
+            "allowBox": true
+        }
+    ],
+    "routeNotes": "Reference 2.2.1map.png / 2.2.2map.jpg + oral route. Yellow -> green 1 solo -> push blue 1 off upper shelf -> green 1 carry -> white 1 across white 2's filled gap -> white right ledge -> move white 3 out from below flag to green 2 -> blue 3 -> flag. Crown height calibrated so box 2 top fills the 1.08-wide white-road gap after strict mirror. Upper barrier is box-only. Flag lower face leaves 0.17 above a standing player on initial box 3; move box out before final jump."
+}

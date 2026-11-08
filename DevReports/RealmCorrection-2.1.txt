@@ -1,0 +1,3 @@
+PASS 2.1 first reflection: exact terrain/box centers, matching visible white solids, complete flag+pole reflection.
+PASS second reflection restores geometry and complete flag.
+PASS reset restores flag scale.

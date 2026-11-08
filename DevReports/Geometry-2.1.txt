@@ -1,0 +1,6 @@
+Geometry validation: 2.1
+PASS initial box clear: Box 1
+PASS initial box clear: Box 2
+PASS initial box clear: Box 3
+PASS initial player clear
+PASS ground bounce 2.714 < ledge 2.780 < box + blue jump 2.837 (continuous model; physics route pending)

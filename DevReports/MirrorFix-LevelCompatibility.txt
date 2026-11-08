@@ -1,0 +1,8 @@
+Current map compatibility with strict box reflection. No terrain or scene assets modified.
+2.1 Green: Unsafe exact mirror: Box 3 / Green landing blue
+axis=6 source=(19.550000, 8.515000) exactTarget=(19.550000, 3.485000) unchangedActual=(19.550000, 8.515000)
+2.2 Green 1: Unsafe exact mirror: Box 1 / White approach to pit
+axis=6 source=(5.100000, 4.615000) exactTarget=(5.100000, 7.385000) unchangedActual=(5.100000, 4.615000)
+2.2 Green 2: Unsafe exact mirror: Box 3 / Green 2 blue shelf
+axis=6 source=(19.550000, 8.265000) exactTarget=(19.550000, 3.735000) unchangedActual=(19.550000, 8.265000)
+BLOCKED These existing green carry targets overlap destination terrain. They must be redrawn; no box snapping or level-specific mirror exceptions were introduced.

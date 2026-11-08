@@ -1,0 +1,54 @@
+Unity 6000.3.28f1 minimal one-platform support mirror test (actual Play Mode)
+PASS Exactly one platform, one box and one yellow zone
+PASS Original platform contact captured by identity
+PASS Yellow inspection transfer accepted
+PASS Box center uses exact mirror formula
+PASS Platform center uses same axis
+PASS Yellow keeps box color
+PASS Original support identity and reflected side retained
+PASS Inactive box suspends physics; matching box is simulated
+PASS Supported vertical coordinate is constrained
+PASS No global gravity inversion; supported box gets no vertical acceleration
+PASS No box drift/fall across normal physics frames
+PASS Yellow inspection transfer accepted
+PASS Box center uses exact mirror formula
+PASS Platform center uses same axis
+PASS Yellow keeps box color
+PASS Original support identity and reflected side retained
+PASS Inactive box suspends physics; matching box is simulated
+PASS Supported vertical coordinate is constrained
+PASS No global gravity inversion; supported box gets no vertical acceleration
+PASS No box drift/fall across normal physics frames
+PASS Yellow inspection transfer accepted
+PASS Box center uses exact mirror formula
+PASS Platform center uses same axis
+PASS Yellow keeps box color
+PASS Original support identity and reflected side retained
+PASS Inactive box suspends physics; matching box is simulated
+PASS Supported vertical coordinate is constrained
+PASS No global gravity inversion; supported box gets no vertical acceleration
+PASS No box drift/fall across normal physics frames
+PASS Yellow inspection transfer accepted
+PASS Box center uses exact mirror formula
+PASS Platform center uses same axis
+PASS Yellow keeps box color
+PASS Original support identity and reflected side retained
+PASS Inactive box suspends physics; matching box is simulated
+PASS Supported vertical coordinate is constrained
+PASS No global gravity inversion; supported box gets no vertical acceleration
+PASS No box drift/fall across normal physics frames
+PASS Yellow inspection transfer accepted
+PASS Box center uses exact mirror formula
+PASS Platform center uses same axis
+PASS Yellow keeps box color
+PASS Original support identity and reflected side retained
+PASS Inactive box suspends physics; matching box is simulated
+PASS Supported vertical coordinate is constrained
+PASS No global gravity inversion; supported box gets no vertical acceleration
+PASS No box drift/fall across normal physics frames
+PASS Matching-color underside support is active
+PASS Active underside box moves horizontally through Rigidbody2D
+PASS Horizontal underside push does not change vertical support relation
+PASS Push keeps original support, not a nearest-platform replacement
+PASS Reset restores initial world and support side
+LIMIT Inspection push is a direct debug input; player-side pushing in redesigned maps is not certified by this minimal test.

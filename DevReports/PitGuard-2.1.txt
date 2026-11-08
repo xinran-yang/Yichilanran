@@ -1,0 +1,4 @@
+2.1 pit-to-green targeted physics fixture; fixed jump parameters.
+ordinary jump: max feet y=2.7567, green top=3.7, crossed=False
+jump + dive bounce: max feet y=3.6215, green top=3.7, crossed=False
+PASS both attempts blocked by actual geometry in Unity Physics2D.

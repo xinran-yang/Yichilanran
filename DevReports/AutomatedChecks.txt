@@ -1,0 +1,23 @@
+Unity 6000.3.28f1 automated checks
+PASS Square box = 1.316 player heights
+PASS White jump clears box with margin
+PASS Two geometric reflections restore rectangle
+PASS Opposite player/box do not collide: Blue
+PASS Same phase terrain collides: Blue
+PASS Opposite player/box do not collide: White
+PASS Same phase terrain collides: White
+PASS Player passes box barrier
+PASS Box stopped by box barrier
+Diagnostic: player transform=(2.00, 2.40, 0.00) body=(2.00, 2.40) velocity=(0.00, 0.00) rect=(x:1.72, y:2.02, width:0.56, height:0.76) support=Blue floor
+PASS Rigidbody2D player settles on blue floor
+PASS Real 2D physics blue jump has expected height
+PASS Normal jump never transfers
+PASS Yellow Dive performs mirror and player phase change
+PASS Yellow preserves both box phases
+PASS Single Dive transfers only once
+PASS Player safely lands after mirror
+PASS Green Dive transfers only participating same-phase box
+PASS Unrelated box phase remains unchanged
+PASS Occupied target rejects transfer
+PASS Rejected transaction changes no positions/phases/counters
+NOTE Sandbox jump and yellow transfer use Unity PhysicsScene2D.Simulate; source placement is a fixture, not a full keyboard route.

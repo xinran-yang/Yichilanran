@@ -1,0 +1,8 @@
+Unity 6000.3.28f1 actual Play Mode lifecycle smoke
+PASS actual Level_2_1 scene starts, player falls/lands via production FixedUpdate at 120 Hz
+PASS ground Dive is rejected in production player loop
+PASS 2.1 goal coroutine performs short fade and SceneManager loads independent Level_2_2
+PASS 2.2 completes and retains scene for completion UI
+PASS production reset path (same API used by R) restores playable scene after completion
+LIMIT Goal contacts are fixtures in this smoke; full input-driven puzzle routes are recorded separately.
+LIMIT Headless smoke does not verify visual fade/UI appearance or physical keyboard events.

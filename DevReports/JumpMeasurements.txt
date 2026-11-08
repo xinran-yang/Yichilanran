@@ -1,0 +1,4 @@
+Unity 6000.3.28f1; actual Rigidbody2D simulation; step=0.008333334
+white measured=1.137499 theoretical=1.175555
+blue measured=1.789165 theoretical=1.836806
+bounce measured=2.656498 theoretical=2.714450

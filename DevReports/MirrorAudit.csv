@@ -1,0 +1,73 @@
+case,transaction,moment,axis,box,participating,beforeX,beforeY,expectedX,expectedY,afterX,afterY,beforeColor,afterColor,bodyError,colliderError,verified,reason
+yellow-Blue--2.75,687524da,RESTORED_BEFORE_STEP,-2.75,Box 1,False,6,3.5175,6,-9.0175,6,-9.0175,Blue,Blue,0,0,True,
+yellow-Blue--2.75,687524da,RESTORED_BEFORE_STEP,-2.75,Box 2,False,12,5.12249947,12,-10.6224995,12,-10.6224995,White,White,0,0,True,
+yellow-Blue--2.75,687524da,RESTORED_BEFORE_STEP,-2.75,Box 3,False,15,7.12249947,15,-12.6224995,15,-12.6224995,Blue,Blue,0,0,True,
+green-solo-Blue--2.75,ed987575,RESTORED_BEFORE_STEP,-2.75,Box 1,False,6,3.5175,6,-9.0175,6,-9.0175,Blue,Blue,0,0,True,
+green-solo-Blue--2.75,ed987575,RESTORED_BEFORE_STEP,-2.75,Box 2,False,12,5.12249947,12,-10.6224995,12,-10.6224995,White,White,0,0,True,
+green-solo-Blue--2.75,ed987575,RESTORED_BEFORE_STEP,-2.75,Box 3,False,15,7.12249947,15,-12.6224995,15,-12.6224995,Blue,Blue,0,0,True,
+green-box-Blue--2.75,b08b5133,RESTORED_BEFORE_STEP,-2.75,Box 1,True,6,3.5175,6,-9.0175,6,-9.0175,Blue,White,0,0,True,
+green-box-Blue--2.75,b08b5133,RESTORED_BEFORE_STEP,-2.75,Box 2,False,12,5.12249947,12,-10.6224995,12,-10.6224995,White,White,0,0,True,
+green-box-Blue--2.75,b08b5133,RESTORED_BEFORE_STEP,-2.75,Box 3,False,15,7.12249947,15,-12.6224995,15,-12.6224995,Blue,Blue,0,0,True,
+yellow-White--2.75,fc8eb05d,RESTORED_BEFORE_STEP,-2.75,Box 1,False,6,3.5175,6,-9.0175,6,-9.0175,White,White,0,0,True,
+yellow-White--2.75,fc8eb05d,RESTORED_BEFORE_STEP,-2.75,Box 2,False,12,5.12249947,12,-10.6224995,12,-10.6224995,Blue,Blue,0,0,True,
+yellow-White--2.75,fc8eb05d,RESTORED_BEFORE_STEP,-2.75,Box 3,False,15,7.12249947,15,-12.6224995,15,-12.6224995,White,White,0,0,True,
+green-solo-White--2.75,67870185,RESTORED_BEFORE_STEP,-2.75,Box 1,False,6,3.5175,6,-9.0175,6,-9.0175,White,White,0,0,True,
+green-solo-White--2.75,67870185,RESTORED_BEFORE_STEP,-2.75,Box 2,False,12,5.12249947,12,-10.6224995,12,-10.6224995,Blue,Blue,0,0,True,
+green-solo-White--2.75,67870185,RESTORED_BEFORE_STEP,-2.75,Box 3,False,15,7.12249947,15,-12.6224995,15,-12.6224995,White,White,0,0,True,
+green-box-White--2.75,21db5b21,RESTORED_BEFORE_STEP,-2.75,Box 1,True,6,3.5175,6,-9.0175,6,-9.0175,White,Blue,0,0,True,
+green-box-White--2.75,21db5b21,RESTORED_BEFORE_STEP,-2.75,Box 2,False,12,5.12249947,12,-10.6224995,12,-10.6224995,Blue,Blue,0,0,True,
+green-box-White--2.75,21db5b21,RESTORED_BEFORE_STEP,-2.75,Box 3,False,15,7.12249947,15,-12.6224995,15,-12.6224995,White,White,0,0,True,
+yellow-Blue-6,0125c937,RESTORED_BEFORE_STEP,6,Box 1,False,6,3.5175,6,8.4825,6,8.4825,Blue,Blue,0,0,True,
+yellow-Blue-6,0125c937,RESTORED_BEFORE_STEP,6,Box 2,False,12,5.12249947,12,6.87750053,12,6.87750053,White,White,0,0,True,
+yellow-Blue-6,0125c937,RESTORED_BEFORE_STEP,6,Box 3,False,15,7.12249947,15,4.87750053,15,4.87750053,Blue,Blue,0,0,True,
+green-solo-Blue-6,4e7c2ea7,RESTORED_BEFORE_STEP,6,Box 1,False,6,3.5175,6,8.4825,6,8.4825,Blue,Blue,0,0,True,
+green-solo-Blue-6,4e7c2ea7,RESTORED_BEFORE_STEP,6,Box 2,False,12,5.12249947,12,6.87750053,12,6.87750053,White,White,0,0,True,
+green-solo-Blue-6,4e7c2ea7,RESTORED_BEFORE_STEP,6,Box 3,False,15,7.12249947,15,4.87750053,15,4.87750053,Blue,Blue,0,0,True,
+green-box-Blue-6,878a1dc2,RESTORED_BEFORE_STEP,6,Box 1,True,6,3.5175,6,8.4825,6,8.4825,Blue,White,0,0,True,
+green-box-Blue-6,878a1dc2,RESTORED_BEFORE_STEP,6,Box 2,False,12,5.12249947,12,6.87750053,12,6.87750053,White,White,0,0,True,
+green-box-Blue-6,878a1dc2,RESTORED_BEFORE_STEP,6,Box 3,False,15,7.12249947,15,4.87750053,15,4.87750053,Blue,Blue,0,0,True,
+yellow-White-6,b31f68f3,RESTORED_BEFORE_STEP,6,Box 1,False,6,3.5175,6,8.4825,6,8.4825,White,White,0,0,True,
+yellow-White-6,b31f68f3,RESTORED_BEFORE_STEP,6,Box 2,False,12,5.12249947,12,6.87750053,12,6.87750053,Blue,Blue,0,0,True,
+yellow-White-6,b31f68f3,RESTORED_BEFORE_STEP,6,Box 3,False,15,7.12249947,15,4.87750053,15,4.87750053,White,White,0,0,True,
+green-solo-White-6,16e48a2e,RESTORED_BEFORE_STEP,6,Box 1,False,6,3.5175,6,8.4825,6,8.4825,White,White,0,0,True,
+green-solo-White-6,16e48a2e,RESTORED_BEFORE_STEP,6,Box 2,False,12,5.12249947,12,6.87750053,12,6.87750053,Blue,Blue,0,0,True,
+green-solo-White-6,16e48a2e,RESTORED_BEFORE_STEP,6,Box 3,False,15,7.12249947,15,4.87750053,15,4.87750053,White,White,0,0,True,
+green-box-White-6,dc904b51,RESTORED_BEFORE_STEP,6,Box 1,True,6,3.5175,6,8.4825,6,8.4825,White,Blue,0,0,True,
+green-box-White-6,dc904b51,RESTORED_BEFORE_STEP,6,Box 2,False,12,5.12249947,12,6.87750053,12,6.87750053,Blue,Blue,0,0,True,
+green-box-White-6,dc904b51,RESTORED_BEFORE_STEP,6,Box 3,False,15,7.12249947,15,4.87750053,15,4.87750053,White,White,0,0,True,
+yellow-Blue-11.125,da86ca35,RESTORED_BEFORE_STEP,11.125,Box 1,False,6,3.5175,6,18.7325,6,18.7325,Blue,Blue,0,0,True,
+yellow-Blue-11.125,da86ca35,RESTORED_BEFORE_STEP,11.125,Box 2,False,12,5.12249947,12,17.1275,12,17.1275,White,White,0,0,True,
+yellow-Blue-11.125,da86ca35,RESTORED_BEFORE_STEP,11.125,Box 3,False,15,7.12249947,15,15.1275005,15,15.1275005,Blue,Blue,0,0,True,
+green-solo-Blue-11.125,97ce074e,RESTORED_BEFORE_STEP,11.125,Box 1,False,6,3.5175,6,18.7325,6,18.7325,Blue,Blue,0,0,True,
+green-solo-Blue-11.125,97ce074e,RESTORED_BEFORE_STEP,11.125,Box 2,False,12,5.12249947,12,17.1275,12,17.1275,White,White,0,0,True,
+green-solo-Blue-11.125,97ce074e,RESTORED_BEFORE_STEP,11.125,Box 3,False,15,7.12249947,15,15.1275005,15,15.1275005,Blue,Blue,0,0,True,
+green-box-Blue-11.125,5ec40df8,RESTORED_BEFORE_STEP,11.125,Box 1,True,6,3.5175,6,18.7325,6,18.7325,Blue,White,0,0,True,
+green-box-Blue-11.125,5ec40df8,RESTORED_BEFORE_STEP,11.125,Box 2,False,12,5.12249947,12,17.1275,12,17.1275,White,White,0,0,True,
+green-box-Blue-11.125,5ec40df8,RESTORED_BEFORE_STEP,11.125,Box 3,False,15,7.12249947,15,15.1275005,15,15.1275005,Blue,Blue,0,0,True,
+yellow-White-11.125,2e2bb7ee,RESTORED_BEFORE_STEP,11.125,Box 1,False,6,3.5175,6,18.7325,6,18.7325,White,White,0,0,True,
+yellow-White-11.125,2e2bb7ee,RESTORED_BEFORE_STEP,11.125,Box 2,False,12,5.12249947,12,17.1275,12,17.1275,Blue,Blue,0,0,True,
+yellow-White-11.125,2e2bb7ee,RESTORED_BEFORE_STEP,11.125,Box 3,False,15,7.12249947,15,15.1275005,15,15.1275005,White,White,0,0,True,
+green-solo-White-11.125,1d0cbb52,RESTORED_BEFORE_STEP,11.125,Box 1,False,6,3.5175,6,18.7325,6,18.7325,White,White,0,0,True,
+green-solo-White-11.125,1d0cbb52,RESTORED_BEFORE_STEP,11.125,Box 2,False,12,5.12249947,12,17.1275,12,17.1275,Blue,Blue,0,0,True,
+green-solo-White-11.125,1d0cbb52,RESTORED_BEFORE_STEP,11.125,Box 3,False,15,7.12249947,15,15.1275005,15,15.1275005,White,White,0,0,True,
+green-box-White-11.125,370e75a5,RESTORED_BEFORE_STEP,11.125,Box 1,True,6,3.5175,6,18.7325,6,18.7325,White,Blue,0,0,True,
+green-box-White-11.125,370e75a5,RESTORED_BEFORE_STEP,11.125,Box 2,False,12,5.12249947,12,17.1275,12,17.1275,Blue,Blue,0,0,True,
+green-box-White-11.125,370e75a5,RESTORED_BEFORE_STEP,11.125,Box 3,False,15,7.12249947,15,15.1275005,15,15.1275005,White,White,0,0,True,
+green-box-Blue-6-offset-scaled,c2f1680a,RESTORED_BEFORE_STEP,6,Box 1,True,6,3.41349983,6,8.5865,6,8.5865,Blue,White,0,0,True,
+green-box-Blue-6-offset-scaled,c2f1680a,RESTORED_BEFORE_STEP,6,Box 2,False,12,5.12249947,12,6.87750053,12,6.87750053,White,White,0,0,True,
+green-box-Blue-6-offset-scaled,c2f1680a,RESTORED_BEFORE_STEP,6,Box 3,False,15,7.12249947,15,4.87750053,15,4.87750053,Blue,Blue,0,0,True,
+double-mirror,d197f849,RESTORED_BEFORE_STEP,6,Box 1,False,6,8.5825,6,3.41749954,6,3.41749954,Blue,Blue,0,4.76837158E-07,True,
+double-mirror,d197f849,RESTORED_BEFORE_STEP,6,Box 2,False,12,6.87750053,12,5.12249947,12,5.12249947,White,White,0,0,True,
+double-mirror,d197f849,RESTORED_BEFORE_STEP,6,Box 3,False,15,4.87750053,15,7.12249947,15,7.12249947,Blue,Blue,0,0,True,
+unsafe-target,4201938d,REJECTED,6,Box 1,True,6,3.5175,6,8.4825,6,3.5175,Blue,Blue,4.965,4.965,False,Unsafe exact mirror: Box 1 / Blocked exact target
+unsafe-target,4201938d,REJECTED,6,Box 2,False,12,5.12249947,12,6.87750053,12,5.12249947,White,White,1.75500107,1.75500107,False,Unsafe exact mirror: Box 1 / Blocked exact target
+unsafe-target,4201938d,REJECTED,6,Box 3,False,15,7.12249947,15,4.87750053,15,7.12249947,Blue,Blue,2.244999,2.244999,False,Unsafe exact mirror: Box 1 / Blocked exact target
+map-2.1-Green,5fc3a520,REJECTED,6,Box 1,False,2.5,8.6025,2.5,3.3975,2.5,8.6025,Blue,Blue,5.205,5.205,False,Unsafe exact mirror: Box 3 / Green landing blue
+map-2.1-Green,5fc3a520,REJECTED,6,Box 2,False,6.5,10.5025005,6.5,1.49749947,6.5,10.5025005,White,White,9.005001,9.005001,False,Unsafe exact mirror: Box 3 / Green landing blue
+map-2.1-Green,5fc3a520,REJECTED,6,Box 3,True,19.55,8.515,19.55,3.48499966,19.55,8.515,White,White,5.03000069,5.03000069,False,Unsafe exact mirror: Box 3 / Green landing blue
+map-2.2-Green 1,92a79a50,REJECTED,6,Box 1,True,5.1,4.615,5.1,7.385,5.1,4.615,Blue,Blue,2.77000046,2.77000046,False,Unsafe exact mirror: Box 1 / White approach to pit
+map-2.2-Green 1,92a79a50,REJECTED,6,Box 2,False,10.54,0.6175,10.54,11.3825,10.54,0.6175,White,White,10.7649994,10.7649994,False,Unsafe exact mirror: Box 1 / White approach to pit
+map-2.2-Green 1,92a79a50,REJECTED,6,Box 3,False,18.8,0.6175,18.8,11.3825,18.8,0.6175,White,White,10.7649994,10.7649994,False,Unsafe exact mirror: Box 1 / White approach to pit
+map-2.2-Green 2,9ef335fe,REJECTED,6,Box 1,False,2,5.10249949,2,6.89750051,2,5.10249949,Blue,Blue,1.795001,1.795001,False,Unsafe exact mirror: Box 3 / Green 2 blue shelf
+map-2.2-Green 2,9ef335fe,REJECTED,6,Box 2,False,10.54,10.5025005,10.54,1.49749947,10.54,10.5025005,White,White,9.005001,9.005001,False,Unsafe exact mirror: Box 3 / Green 2 blue shelf
+map-2.2-Green 2,9ef335fe,REJECTED,6,Box 3,True,19.55,8.265,19.55,3.73499966,19.55,8.265,White,White,4.53000069,4.53000069,False,Unsafe exact mirror: Box 3 / Green 2 blue shelf

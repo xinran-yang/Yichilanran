@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b44a040f9ad6143bb302b9f7e8975f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YiChiLanRan.LevelDefinition
+  levelId: Mechanics sandbox
+  nextScene: 
+  mirrorAxis: 6
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 24
+    height: 12
+  spawn: {x: 2, y: 2.5}
+  goal: {x: 22, y: 3}
+  terrain:
+  - id: Bottom
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 24
+      height: 0.1
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Top
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 11.9
+      width: 24
+      height: 0.1
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Left
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.1
+      height: 12
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Right
+    rect:
+      serializedVersion: 2
+      x: 23.9
+      y: 0
+      width: 0.1
+      height: 12
+    phase: 2
+    elastic: 0
+    breakable: 0
+    kind: 0
+  - id: Blue floor
+    rect:
+      serializedVersion: 2
+      x: 0.1
+      y: 0.1
+      width: 23.8
+      height: 1.9
+    phase: 0
+    elastic: 1
+    breakable: 0
+    kind: 0
+  - id: White ceiling
+    rect:
+      serializedVersion: 2
+      x: 0.1
+      y: 2
+      width: 23.8
+      height: 9.9
+    phase: 1
+    elastic: 0
+    breakable: 0
+    kind: 0
+  boxes:
+  - id: Box 1
+    center: {x: 4, y: 2.5}
+    phase: 0
+  - id: Box 2
+    center: {x: 15, y: 0.62}
+    phase: 1
+  zones:
+  - id: Yellow
+    x: 7
+    width: 2
+    floor: 2
+    green: 0
+    allowSolo: 1
+    allowBox: 0
+  - id: Green
+    x: 13
+    width: 4
+    floor: 2
+    green: 1
+    allowSolo: 1
+    allowBox: 1
+  routeNotes: 

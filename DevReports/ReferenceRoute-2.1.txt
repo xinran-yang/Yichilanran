@@ -1,0 +1,4 @@
+PASS reference-map route 2.1
+Yellow solo
+Green + Box 3
+player=(x:21.29, y:8.16, width:0.56, height:0.76) grounded=True phase=Blue transfers=2 event=Level complete rejection=
